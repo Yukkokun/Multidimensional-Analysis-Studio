@@ -1,0 +1,25 @@
+{
+   "lists" : {
+      "amp" : "absolutely_|altogether_|completely_|enormously_|entirely_|extremely_|fully_|greatly_|highly_|intensely_|perfectly_|strongly_|thoroughly_|totally_|utterly_|very_",
+      "andcNx" : "and_|because_|although_|tho_|if_|unless_",
+      "caus" : "because_",
+      "conc" : "although_|though_|tho_",
+      "cond" : "if_|unless_",
+      "conj" : "alternatively_|consequently_|conversely_|eg_|e.g._|furthermore_|hence_|however_|i.e._|instead_|likewise_|moreover_|namely_|nevertheless_|nonetheless_|notwithstanding_|otherwise_|similarly_|therefore_|thus_|viz._",
+      "dpar" : "well_|now_|anyhow_|anyways_",
+      "dwnt" : "almost_|barely_|hardly_|merely_|mildly_|nearly_|only_|partially_|partly_|practically_|scarcely_|slightly_|somewhat_",
+      "emph" : "just_|really_|most_|more_",
+      "fpp1" : "I_|me_|we_|us_|my_|our_|myself_|ourselves_",
+      "hdgm" : "maybe_",
+      "nemd" : "ought_|should_|must_",
+      "pit" : "it_|its_|itself_",
+      "place" : "aboard_|above_|abroad_|across_|ahead_|alongside_|around_|ashore_|astern_|away_|behind_|below_|beneath_|beside_|downhill_|downstairs_|downstream_|east_|far_|hereabouts_|indoors_|inland_|inshore_|inside_|locally_|near_|nearby_|north_|nowhere_|outdoors_|outside_|overboard_|overland_|overseas_|south_|underfoot_|underground_|underneath_|uphill_|upstairs_|upstream_|west_",
+      "pomd" : "can_|may_|might_|could_|ca_MD",
+      "smp" : "seem_V|seems_V|seemed_V|seeming_V|appear_V|appears_V|appeared_V|appearing_V",
+      "spp2" : "you_|your_|yourself_|yourselves_|thy_|thee_|thyself_|thou_",
+      "time" : "afterwards_|again_|earlier_|early_|eventually_|formerly_|immediately_|initially_|instantly_|late_|lately_|later_|momentarily_|now_|nowadays_|once_|originally_|presently_|previously_|recently_|shortly_|simultaneously_|subsequently_|today_|to-day_|tomorrow_|to-morrow_|tonight_|to-night_|yesterday_",
+      "timeSub" : "soon_|as_",
+      "tpp3" : "she_|he_|they_|her_|him_|them_|his_|their_|himself_|herself_|themselves_"
+   },
+   "source" : "MAT 1.3.3 Tagger_MAT.pl (按行号抽取)"
+}

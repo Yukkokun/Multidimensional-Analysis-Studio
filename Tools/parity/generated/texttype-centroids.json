@@ -1,0 +1,85 @@
+{
+   "source" : "MAT 1.3.3 calc_dimensions.pl",
+   "textTypes" : [
+      {
+         "dimension" : [
+            45,
+            -1,
+            -6,
+            1,
+            -4
+         ],
+         "id" : "Intimate interpersonal interaction"
+      },
+      {
+         "dimension" : [
+            30,
+            -1,
+            -4,
+            1,
+            -3
+         ],
+         "id" : "Informational interaction"
+      },
+      {
+         "dimension" : [
+            -15,
+            -2.5,
+            4,
+            -2,
+            9
+         ],
+         "id" : "Scientific exposition"
+      },
+      {
+         "dimension" : [
+            -20,
+            -2,
+            5,
+            -3,
+            2
+         ],
+         "id" : "Learned exposition"
+      },
+      {
+         "dimension" : [
+            5,
+            7,
+            -4,
+            1,
+            -2
+         ],
+         "id" : "Imaginative narrative"
+      },
+      {
+         "dimension" : [
+            -10,
+            2,
+            0,
+            -1,
+            0
+         ],
+         "id" : "General narrative exposition"
+      },
+      {
+         "dimension" : [
+            0,
+            -3,
+            -13,
+            -4.5,
+            -3
+         ],
+         "id" : "Situated reportage"
+      },
+      {
+         "dimension" : [
+            5,
+            -2,
+            2,
+            4,
+            -1
+         ],
+         "id" : "Involved persuasion"
+      }
+   ]
+}

@@ -1,0 +1,17 @@
+The_DT
+test_NN
+starts_VPRT
+here_RB
+._.
+Well_DPAR
+,_,
+I_FPP1
+think_VPRT [PRIV] [THATD]
+it_PIT
+works_VPRT
+._.
+Anyhow_DPAR
+,_,
+we_FPP1
+tried_VBD
+._.

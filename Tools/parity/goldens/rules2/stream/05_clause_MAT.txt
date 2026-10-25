@@ -1,0 +1,36 @@
+The_DT
+test_NN
+starts_VPRT
+here_RB
+._.
+He_TPP3
+asked_VBD [SUAV]
+what_WP [WHCL]
+happened_VBD
+._.
+What_WP [WHQU]
+did_VBD
+you_SPP2
+say_VB [PUBV]
+?_.
+The_DT
+claim_NN
+that_TSUB
+matters_VPRT
+is_VPRT [BEMA]
+odd_PRED
+._.
+It_PIT
+is_VPRT [BEMA]
+clear_PRED
+that_THAC
+he_TPP3
+lied_VBD
+._.
+She_TPP3
+runs_VPRT
+faster_RB
+than_PIN
+I_FPP1
+do_VPRT [PROD]
+._.

@@ -1,0 +1,20 @@
+The_DT
+test_NN
+starts_VPRT
+here_RB
+._.
+Maybe_HDG
+it_PIT
+works_VPRT
+._.
+He_TPP3
+left_VBD
+at_HDG
+about_NULL
+noon_NN
+._.
+They_TPP3
+sort_NULL
+of_HDG
+agree_VPRT [SUAV] [PUBV]
+._.

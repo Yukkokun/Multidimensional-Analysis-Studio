@@ -1,0 +1,1 @@
+The_DT book_NN is_VBZ on_IN the_DT table_NN ._. He_PRP walked_VBD to_TO the_DT store_NN ._. She_PRP went_VBD to_IN school_NN ._. The_DT house_NN he_PRP lives_VBZ in_IN ._. The_DT plan_NN is_VBZ to_TO really_RB improve_VB things_NNS ._.

@@ -1,0 +1,120 @@
+The_DT
+available_JJ
+pattern_NN
+therefore_CONJ
+compare_VPRT
+the_DT
+different_JJ
+context_NN
+._.
+This_DEMO
+pattern_NN
+was_VBD [BYPA]
+compared_VBN
+by_PIN
+the_DT
+context_NN
+._.
+The_DT
+significant_JJ
+factor_NN
+therefore_CONJ
+suggest_VPRT [SUAV] [PUBV]
+the_DT
+available_JJ
+result_NN
+._.
+This_DEMO
+factor_NN
+was_VBD [BYPA]
+suggesed_VBN
+by_PIN
+the_DT
+result_NN
+._.
+The_DT
+significant_JJ
+sample_NN
+therefore_CONJ
+compare_VPRT
+the_DT
+general_JJ
+result_NN
+._.
+This_DEMO
+sample_NN
+was_VBD [BYPA]
+compared_VBN
+by_PIN
+the_DT
+result_NN
+._.
+The_DT
+possible_JJ
+feature_NN
+still_RB
+show_VPRT [PRIV]
+the_DT
+important_JJ
+factor_NN
+._.
+This_DEMO
+feature_NN
+was_VBD [BYPA]
+shoed_VBN
+by_PIN
+the_DT
+factor_NN
+._.
+The_DT
+different_JJ
+measure_NN
+already_RB
+describe_VPRT
+the_DT
+significant_JJ
+variable_NN
+._.
+This_DEMO
+measure_NN
+was_VBD [BYPA]
+described_VBN
+by_PIN
+the_DT
+variable_NN
+._.
+The_DT
+significant_JJ
+result_NN
+also_RB
+show_VPRT [PRIV]
+the_DT
+available_JJ
+function_NOMZ
+._.
+This_DEMO
+result_NN
+was_VBD [BYPA]
+shoed_VBN
+by_PIN
+the_DT
+function_NOMZ
+._.
+The_DT
+important_JJ
+system_NN
+also_RB
+suggest_VPRT [SUAV] [PUBV]
+the_DT
+significant_JJ
+analysis_NN
+._.
+This_DEMO
+system_NN
+was_VBD [BYPA]
+suggesed_VBN
+by_PIN
+the_DT
+analysis_NN
+._.
+The_DT

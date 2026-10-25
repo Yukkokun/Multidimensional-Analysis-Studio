@@ -1,0 +1,11 @@
+Recent research on register variation has demonstrated that linguistic features are not distributed randomly across texts.
+Instead, particular combinations of features tend to co-occur in functionally similar contexts, and these co-occurring patterns have been interpreted as evidence for underlying dimensions of variation.
+The present study extends this line of inquiry by examining a corpus of academic articles drawn from three disciplines.
+Each text was annotated for part-of-speech categories, and approximately sixty linguistic features were computed.
+Dimension scores were then derived by standardising feature frequencies against previously reported means and standard deviations.
+The results indicate that the disciplines differ substantially in their reliance on nominal elaboration, although the magnitude of the difference varies across sub-genres.
+The writers who contributed to the volume were asked to describe their methods in detail.
+The framework which they propose has been widely adopted in subsequent work.
+These findings suggest that disciplinary variation should be modelled as a continuum rather than as a set of discrete categories.
+Understanding the interaction between discipline and communicative purpose therefore requires a more explicit account of the mechanisms involved.
+The analysis reported here is necessarily limited by the size of the sample, and further investigation is required.

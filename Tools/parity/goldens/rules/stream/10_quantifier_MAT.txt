@@ -1,0 +1,17 @@
+Each_QUAN
+student_NN
+brought_VBD
+something_QUPR
+._.
+Everybody_QUPR
+knows_VPRT [PRIV] [THATD]
+that_DEMP
+._.
+Nobody_INPR
+came_VBD
+._.
+Some_QUAN
+people_NN
+left_VBD
+early_TIME
+._.

@@ -1,0 +1,31 @@
+The_DT
+implementation_NOMZ
+of_PIN
+the_DT
+system_NN
+requires_VPRT [SUAV]
+careful_JJ
+consideration_NOMZ
+._.
+The_DT
+meeting_GER
+was_VBD [BEMA]
+long_PRED
+._.
+Understanding_GER
+the_DT
+problem_NN
+is_VPRT [BEMA]
+important_PRED
+._.
+The_DT
+happiness_NOMZ
+of_PIN
+others_NN
+matters_VPRT
+._.
+The_DT
+findings_GER
+are_VPRT [BEMA]
+clear_PRED
+._.

@@ -1,0 +1,41 @@
+That_DEMP
+is_VPRT [BEMA]
+the_DT
+problem_NN
+._.
+That_DEMO
+book_NN
+is_VPRT [BEMA]
+mine_PRP
+._.
+I_FPP1
+think_VPRT [PRIV] [THATD]
+that_DEMP
+this_DEMP
+is_VPRT [BEMA]
+wrong_PRED
+._.
+The_DT
+fact_NN
+that_TOBJ
+she_TPP3
+lied_VBD
+surprised_VBD
+us_FPP1
+._.
+The_DT
+book_NN
+that_TOBJ
+I_FPP1
+bought_VBD
+was_VBD [BEMA]
+expensive_PRED
+._.
+He_TPP3
+said_VBD [PUBV]
+that_THVC
+the_DT
+plan_NN
+would_PRMD
+fail_VB
+._.

@@ -1,0 +1,21 @@
+The_DT
+test_NN
+starts_VPRT
+here_RB
+._.
+The_DT
+result_NN
+is_VPRT [BEMA]
+good_PRED
+and_PHC
+bad_PRED
+._.
+The_DT
+extent_NN
+to_PIN
+which_WDT [PIRE]
+it_PIT
+matters_VPRT
+is_VPRT [BEMA]
+unclear_PRED
+._.

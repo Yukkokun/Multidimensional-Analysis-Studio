@@ -1,0 +1,33 @@
+The_DT
+test_NN
+starts_VPRT
+here_RB
+._.
+Walking_VBG [PRESP]
+home_RB
+,_,
+she_TPP3
+saw_VBD [PRIV]
+it_PIT
+._.
+Written_VBN [PUBV] [PASTP]
+carefully_RB
+,_,
+the_DT
+report_NN
+was_VBD [BEMA]
+good_PRED
+._.
+The_DT
+man_NN
+walking_VBG [WZPRES]
+home_RB
+waved_VBD
+._.
+The_DT
+report_NN
+written_VBN [PUBV] [WZPAST]
+carefully_RB
+was_VBD [BEMA]
+long_PRED
+._.

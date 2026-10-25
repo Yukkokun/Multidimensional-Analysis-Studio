@@ -1,0 +1,39 @@
+I_FPP1
+do_VPRT
+n't_XX0 [CONT]
+know_VB [PRIV]
+._.
+They_TPP3
+do_VPRT
+n't_XX0 [CONT]
+want_VB
+to_TO
+go_VB
+._.
+She_TPP3
+'s_VPRT [CONT] [BEMA]
+not_XX0
+happy_PRED
+._.
+We_FPP1
+'re_VPRT [CONT]
+going_VBG
+to_TO
+win_VB
+._.
+It_PIT
+'s_VPRT [CONT] [BEMA]
+a_DT
+good_JJ
+idea_NN
+._.
+He_TPP3
+'ll_PRMD [CONT]
+come_VB
+later_TIME
+._.
+I_FPP1
+'d_PRMD [CONT] [SPAU]
+rather_RB
+stay_VB
+._.

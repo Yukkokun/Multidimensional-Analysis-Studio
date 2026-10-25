@@ -1,0 +1,700 @@
+The_DT
+possible_JJ
+model_NN
+therefore_CONJ
+describe_VPRT
+the_DT
+recent_JJ
+analysis_NN
+._.
+This_DEMO
+model_NN
+was_VBD [BYPA]
+described_VBN
+by_PIN
+the_DT
+analysis_NN
+._.
+The_DT
+available_JJ
+sample_NN
+still_RB
+provide_VPRT
+the_DT
+significant_JJ
+result_NN
+._.
+This_DEMO
+sample_NN
+was_VBD [BYPA]
+provided_VBN
+by_PIN
+the_DT
+result_NN
+._.
+The_DT
+available_JJ
+corpus_NN
+already_RB
+require_VPRT [SUAV]
+the_DT
+recent_JJ
+pattern_NN
+._.
+This_DEMO
+corpus_NN
+was_VBD [BYPA]
+required_VBN [SUAV]
+by_PIN
+the_DT
+pattern_NN
+._.
+The_DT
+general_JJ
+sample_NN
+still_RB
+indicate_VPRT [PRIV]
+the_DT
+recent_JJ
+measure_NN
+._.
+This_DEMO
+sample_NN
+was_VBD [BYPA]
+indicated_VBN [PRIV]
+by_PIN
+the_DT
+measure_NN
+._.
+The_DT
+important_JJ
+pattern_NN
+however_CONJ
+describe_VPRT
+the_DT
+complex_JJ
+model_NN
+._.
+This_DEMO
+pattern_NN
+was_VBD [BYPA]
+described_VBN
+by_PIN
+the_DT
+model_NN
+._.
+The_DT
+available_JJ
+corpus_NN
+also_RB
+compare_VPRT
+the_DT
+similar_JJ
+sample_NN
+._.
+This_DEMO
+corpus_NN
+was_VBD [BYPA]
+compared_VBN
+by_PIN
+the_DT
+sample_NN
+._.
+The_DT
+important_JJ
+function_NOMZ
+also_RB
+indicate_VPRT [PRIV]
+the_DT
+similar_JJ
+feature_NN
+._.
+This_DEMO
+function_NOMZ
+was_VBD [BYPA]
+indicated_VBN [PRIV]
+by_PIN
+the_DT
+feature_NN
+._.
+The_DT
+clear_JJ
+variable_NN
+often_RB
+show_VPRT [PRIV]
+the_DT
+clear_JJ
+sample_NN
+._.
+This_DEMO
+variable_NN
+was_VBD [BYPA]
+shoed_VBN
+by_PIN
+the_DT
+sample_NN
+._.
+The_DT
+recent_JJ
+factor_NN
+still_RB
+indicate_VPRT [PRIV]
+the_DT
+clear_JJ
+system_NN
+._.
+This_DEMO
+factor_NN
+was_VBD [BYPA]
+indicated_VBN [PRIV]
+by_PIN
+the_DT
+system_NN
+._.
+The_DT
+recent_JJ
+sample_NN
+often_RB
+provide_VPRT
+the_DT
+complex_JJ
+measure_NN
+._.
+This_DEMO
+sample_NN
+was_VBD [BYPA]
+provided_VBN
+by_PIN
+the_DT
+measure_NN
+._.
+The_DT
+general_JJ
+sample_NN
+also_RB
+show_VPRT [PRIV]
+the_DT
+available_JJ
+corpus_NN
+._.
+This_DEMO
+sample_NN
+was_VBD [BYPA]
+shoed_VBN
+by_PIN
+the_DT
+corpus_NN
+._.
+The_DT
+possible_JJ
+method_NN
+also_RB
+show_VPRT [PRIV]
+the_DT
+clear_JJ
+method_NN
+._.
+This_DEMO
+method_NN
+was_VBD [BYPA]
+shoed_VBN
+by_PIN
+the_DT
+method_NN
+._.
+The_DT
+complex_JJ
+system_NN
+often_RB
+indicate_VPRT [PRIV]
+the_DT
+similar_JJ
+corpus_NN
+._.
+This_DEMO
+system_NN
+was_VBD [BYPA]
+indicated_VBN [PRIV]
+by_PIN
+the_DT
+corpus_NN
+._.
+The_DT
+complex_JJ
+sample_NN
+however_CONJ
+require_VPRT [SUAV]
+the_DT
+different_JJ
+model_NN
+._.
+This_DEMO
+sample_NN
+was_VBD [BYPA]
+required_VBN [SUAV]
+by_PIN
+the_DT
+model_NN
+._.
+The_DT
+available_JJ
+model_NN
+therefore_CONJ
+require_VPRT [SUAV]
+the_DT
+recent_JJ
+context_NN
+._.
+This_DEMO
+model_NN
+was_VBD [BYPA]
+required_VBN [SUAV]
+by_PIN
+the_DT
+context_NN
+._.
+The_DT
+important_JJ
+method_NN
+however_CONJ
+require_VPRT [SUAV]
+the_DT
+complex_JJ
+measure_NN
+._.
+This_DEMO
+method_NN
+was_VBD [BYPA]
+required_VBN [SUAV]
+by_PIN
+the_DT
+measure_NN
+._.
+The_DT
+similar_JJ
+method_NN
+already_RB
+show_VPRT [PRIV]
+the_DT
+different_JJ
+factor_NN
+._.
+This_DEMO
+method_NN
+was_VBD [BYPA]
+shoed_VBN
+by_PIN
+the_DT
+factor_NN
+._.
+The_DT
+possible_JJ
+corpus_NN
+therefore_CONJ
+require_VPRT [SUAV]
+the_DT
+significant_JJ
+variable_NN
+._.
+This_DEMO
+corpus_NN
+was_VBD [BYPA]
+required_VBN [SUAV]
+by_PIN
+the_DT
+variable_NN
+._.
+The_DT
+general_JJ
+system_NN
+therefore_CONJ
+provide_VPRT
+the_DT
+recent_JJ
+variable_NN
+._.
+This_DEMO
+system_NN
+was_VBD [BYPA]
+provided_VBN
+by_PIN
+the_DT
+variable_NN
+._.
+The_DT
+complex_JJ
+feature_NN
+therefore_CONJ
+provide_VPRT
+the_DT
+recent_JJ
+measure_NN
+._.
+This_DEMO
+feature_NN
+was_VBD [BYPA]
+provided_VBN
+by_PIN
+the_DT
+measure_NN
+._.
+The_DT
+different_JJ
+model_NN
+however_CONJ
+require_VPRT [SUAV]
+the_DT
+complex_JJ
+system_NN
+._.
+This_DEMO
+model_NN
+was_VBD [BYPA]
+required_VBN [SUAV]
+by_PIN
+the_DT
+system_NN
+._.
+The_DT
+clear_JJ
+context_NN
+already_RB
+suggest_VPRT [SUAV] [PUBV]
+the_DT
+possible_JJ
+method_NN
+._.
+This_DEMO
+context_NN
+was_VBD [BYPA]
+suggesed_VBN
+by_PIN
+the_DT
+method_NN
+._.
+The_DT
+significant_JJ
+corpus_NN
+already_RB
+indicate_VPRT [PRIV]
+the_DT
+possible_JJ
+model_NN
+._.
+This_DEMO
+corpus_NN
+was_VBD [BYPA]
+indicated_VBN [PRIV]
+by_PIN
+the_DT
+model_NN
+._.
+The_DT
+complex_JJ
+corpus_NN
+already_RB
+require_VPRT [SUAV]
+the_DT
+clear_JJ
+context_NN
+._.
+This_DEMO
+corpus_NN
+was_VBD [BYPA]
+required_VBN [SUAV]
+by_PIN
+the_DT
+context_NN
+._.
+The_DT
+clear_JJ
+function_NOMZ
+already_RB
+compare_VPRT
+the_DT
+significant_JJ
+function_NOMZ
+._.
+This_DEMO
+function_NOMZ
+was_VBD [BYPA]
+compared_VBN
+by_PIN
+the_DT
+function_NOMZ
+._.
+The_DT
+important_JJ
+factor_NN
+often_RB
+compare_VPRT
+the_DT
+important_JJ
+variable_NN
+._.
+This_DEMO
+factor_NN
+was_VBD [BYPA]
+compared_VBN
+by_PIN
+the_DT
+variable_NN
+._.
+The_DT
+general_JJ
+pattern_NN
+also_RB
+compare_VPRT
+the_DT
+significant_JJ
+feature_NN
+._.
+This_DEMO
+pattern_NN
+was_VBD [BYPA]
+compared_VBN
+by_PIN
+the_DT
+feature_NN
+._.
+The_DT
+general_JJ
+model_NN
+often_RB
+suggest_VPRT [SUAV] [PUBV]
+the_DT
+similar_JJ
+function_NOMZ
+._.
+This_DEMO
+model_NN
+was_VBD [BYPA]
+suggesed_VBN
+by_PIN
+the_DT
+function_NOMZ
+._.
+The_DT
+general_JJ
+model_NN
+still_RB
+show_VPRT [PRIV]
+the_DT
+important_JJ
+sample_NN
+._.
+This_DEMO
+model_NN
+was_VBD [BYPA]
+shoed_VBN
+by_PIN
+the_DT
+sample_NN
+._.
+The_DT
+available_JJ
+measure_NN
+often_RB
+describe_VPRT
+the_DT
+important_JJ
+corpus_NN
+._.
+This_DEMO
+measure_NN
+was_VBD [BYPA]
+described_VBN
+by_PIN
+the_DT
+corpus_NN
+._.
+The_DT
+important_JJ
+measure_NN
+therefore_CONJ
+show_VPRT [PRIV]
+the_DT
+possible_JJ
+function_NOMZ
+._.
+This_DEMO
+measure_NN
+was_VBD [BYPA]
+shoed_VBN
+by_PIN
+the_DT
+function_NOMZ
+._.
+The_DT
+important_JJ
+system_NN
+still_RB
+provide_VPRT
+the_DT
+similar_JJ
+context_NN
+._.
+This_DEMO
+system_NN
+was_VBD [BYPA]
+provided_VBN
+by_PIN
+the_DT
+context_NN
+._.
+The_DT
+general_JJ
+analysis_NN
+already_RB
+indicate_VPRT [PRIV]
+the_DT
+general_JJ
+corpus_NN
+._.
+This_DEMO
+analysis_NN
+was_VBD [BYPA]
+indicated_VBN [PRIV]
+by_PIN
+the_DT
+corpus_NN
+._.
+The_DT
+recent_JJ
+pattern_NN
+also_RB
+show_VPRT [PRIV]
+the_DT
+important_JJ
+context_NN
+._.
+This_DEMO
+pattern_NN
+was_VBD [BYPA]
+shoed_VBN
+by_PIN
+the_DT
+context_NN
+._.
+The_DT
+recent_JJ
+pattern_NN
+still_RB
+provide_VPRT
+the_DT
+clear_JJ
+corpus_NN
+._.
+This_DEMO
+pattern_NN
+was_VBD [BYPA]
+provided_VBN
+by_PIN
+the_DT
+corpus_NN
+._.
+The_DT
+clear_JJ
+result_NN
+therefore_CONJ
+show_VPRT [PRIV]
+the_DT
+complex_JJ
+corpus_NN
+._.
+This_DEMO
+result_NN
+was_VBD [BYPA]
+shoed_VBN
+by_PIN
+the_DT
+corpus_NN
+._.
+The_DT
+different_JJ
+context_NN
+still_RB
+indicate_VPRT [PRIV]
+the_DT
+general_JJ
+analysis_NN
+._.
+This_DEMO
+context_NN
+was_VBD [BYPA]
+indicated_VBN [PRIV]
+by_PIN
+the_DT
+analysis_NN
+._.
+The_DT
+possible_JJ
+analysis_NN
+therefore_CONJ
+indicate_VPRT [PRIV]
+the_DT
+possible_JJ
+method_NN
+._.
+This_DEMO
+analysis_NN
+was_VBD [BYPA]
+indicated_VBN [PRIV]
+by_PIN
+the_DT
+method_NN
+._.
+The_DT
+possible_JJ
+factor_NN
+still_RB
+suggest_VPRT [SUAV] [PUBV]
+the_DT
+different_JJ
+context_NN
+._.
+This_DEMO
+factor_NN
+was_VBD [BYPA]
+suggesed_VBN
+by_PIN
+the_DT
+context_NN
+._.
+The_DT
+different_JJ
+pattern_NN
+also_RB
+indicate_VPRT [PRIV]
+the_DT
+similar_JJ
+sample_NN
+._.
+This_DEMO
+pattern_NN
+was_VBD [BYPA]
+indicated_VBN [PRIV]
+by_PIN
+the_DT
+sample_NN
+._.
+The_DT
+important_JJ
+system_NN
+often_RB
+show_VPRT [PRIV]
+the_DT
+clear_JJ
+result_NN
+._.
+This_DEMO
+system_NN
+was_VBD [BYPA]
+shoed_VBN
+by_PIN
+the_DT
+result_NN
+._.
+The_DT
+recent_JJ
+corpus_NN

@@ -1,0 +1,19 @@
+The relationship between grammatical complexity and register has been the subject of considerable discussion in corpus linguistics.
+Earlier accounts tended to treat complexity as a property of sentences, measured by the number of clauses that a sentence contains.
+More recent work has argued that complexity is better understood as a property of the noun phrase, and that the two kinds of complexity are distributed differently across registers.
+Conversational texts, for example, tend to rely on clause combination, whereas academic texts rely heavily on phrasal elaboration.
+This distinction has consequences for the way in which complexity is measured, because measures designed for one kind of elaboration may systematically underestimate the other.
+The present paper examines this issue using a corpus of published research articles and transcribed conversations.
+Each text was annotated for syntactic structure, and a range of measures was computed at both the clause and the phrase level.
+The results confirm that the two registers differ in the expected direction, but they also reveal considerable variation within each register.
+Articles in the humanities, for instance, pattern more like conversation than articles in the physical sciences do.
+These findings suggest that register differences are gradient rather than categorical, and that the notion of a single complexity score is difficult to justify.
+A more defensible approach is to report several measures and to interpret them in the light of the communicative purposes that characterise each register.
+Such an approach requires, however, that the measures themselves be clearly defined and consistently applied.
+The discussion concludes by proposing a small set of measures that appear to capture the relevant distinctions without imposing an unwarranted uniformity on the data.
+Further work will be needed to establish whether these measures behave similarly in other languages and in other kinds of specialised discourse.
+Two limitations of the present study should be acknowledged at the outset.
+First, the corpus is relatively small, and the genres that it represents are not evenly distributed across the sample.
+Second, the annotation scheme was developed for written English, and its application to transcribed speech required several adjustments that may have introduced inconsistency.
+Neither limitation, however, affects the central claim, which is that clause-level and phrase-level complexity must be distinguished if register differences are to be described adequately.
+The measures proposed here are intended as a starting point rather than as a definitive solution, and they should be refined in the light of further evidence.

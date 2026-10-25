@@ -1,0 +1,9 @@
+Before you begin, make sure that the device is disconnected from the mains supply.
+Remove the cover by sliding it gently towards you, and set it aside in a safe place.
+You should not attempt to open the housing unless the indicator light has gone out completely.
+To really improve performance, clean the filter every two weeks.
+If the filter is badly clogged, you may need to replace it rather than wash it.
+Do not use solvents, because they can damage the surface of the housing.
+Having replaced the filter, press the reset button and wait for the light to stop flashing.
+You must check the seal before you reconnect the device.
+Replacing a worn seal is usually straightforward, although it requires some patience.

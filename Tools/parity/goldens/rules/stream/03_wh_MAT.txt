@@ -1,0 +1,36 @@
+The_DT
+man_NN
+who_WP [WHSUB]
+came_VBD
+late_TIME
+left_VBD
+._.
+The_DT
+book_NN
+which_WDT [WHOBJ]
+I_FPP1
+read_VBD
+was_VBD [BEMA]
+good_PRED
+._.
+The_DT
+thing_NN
+which_WDT [WHSUB]
+happened_VBD
+was_VBD [BEMA]
+odd_PRED
+._.
+He_TPP3
+arrived_VBD
+,_,
+which_WDT [SERE]
+was_VBD [BEMA]
+lucky_PRED
+._.
+The_DT
+city_NOMZ
+in_PIN
+which_WDT [PIRE]
+she_TPP3
+lives_VPRT
+._.

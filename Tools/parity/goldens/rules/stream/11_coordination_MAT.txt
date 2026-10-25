@@ -1,0 +1,25 @@
+The_DT
+plan_NN
+,_,
+and_ANDC
+the_DT
+budget_NN
+,_,
+and_ANDC
+the_DT
+scope_NN
+were_VBD [PASS]
+approved_VBN
+._.
+He_TPP3
+ran_VBD
+fast_RB
+and_PHC
+far_PLACE
+._.
+The_DT
+red_JJ
+and_PHC
+blue_JJ
+flags_NN
+._.

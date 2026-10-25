@@ -1,0 +1,30 @@
+The_DT
+report_NN
+was_VBD [BYPA]
+written_VBN [PUBV]
+by_PIN
+the_DT
+committee_NN
+._.
+The_DT
+results_NN
+were_VBD [PASS]
+published_VBN
+in_PIN
+two_CD
+journals_NN
+._.
+The_DT
+door_NN
+was_VBD [PASS]
+opened_VBN
+._.
+The_DT
+paper_NN
+has_VPRT [PEAS]
+been_VBN [BYPA]
+read_VBN
+by_PIN
+many_QUAN
+students_NN
+._.

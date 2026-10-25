@@ -1,0 +1,52 @@
+{
+  "t01_dialogue.txt": {
+    "bytes": 762,
+    "sha256": "a6cae0bfc96f9405",
+    "words": 142
+  },
+  "t02_news.txt": {
+    "bytes": 1064,
+    "sha256": "abe82f67e0d910ef",
+    "words": 164
+  },
+  "t03_academic.txt": {
+    "bytes": 1421,
+    "sha256": "73e44362784bafe6",
+    "words": 197
+  },
+  "t04_legal.txt": {
+    "bytes": 872,
+    "sha256": "8c8d48890db7ddcf",
+    "words": 143
+  },
+  "t05_fiction.txt": {
+    "bytes": 852,
+    "sha256": "a9a62c0147ded603",
+    "words": 151
+  },
+  "t06_speech.txt": {
+    "bytes": 729,
+    "sha256": "c3b3b1a154e14dc4",
+    "words": 139
+  },
+  "t07_manual.txt": {
+    "bytes": 716,
+    "sha256": "9aa9910a84195702",
+    "words": 124
+  },
+  "t08_review.txt": {
+    "bytes": 625,
+    "sha256": "5fd09b62facdbaef",
+    "words": 112
+  },
+  "t09_letter.txt": {
+    "bytes": 585,
+    "sha256": "2f72c6a571cf7623",
+    "words": 110
+  },
+  "t10_long.txt": {
+    "bytes": 2711,
+    "sha256": "f3cc3a5ee762e20c",
+    "words": 402
+  }
+}

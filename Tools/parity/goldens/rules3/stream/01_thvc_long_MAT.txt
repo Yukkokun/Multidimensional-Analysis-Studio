@@ -1,0 +1,41 @@
+The_DT
+test_NN
+starts_VPRT
+here_RB
+._.
+He_TPP3
+said_VBD [PUBV]
+in_PIN
+the_DT
+report_NN
+that_THVC
+perhaps_RB
+not_XX0
+everyone_QUPR
+agrees_VPRT [SUAV] [PUBV]
+._.
+He_TPP3
+said_VBD [PUBV]
+in_PIN
+the_DT
+big_JJ
+report_NN
+that_THVC
+perhaps_RB
+not_XX0
+everyone_QUPR
+agrees_VPRT [SUAV] [PUBV]
+._.
+He_TPP3
+said_VBD [PUBV]
+in_PIN
+the_DT
+big_JJ
+new_JJ
+report_NN
+that_THVC
+perhaps_RB
+not_XX0
+everyone_QUPR
+agrees_VPRT [SUAV] [PUBV]
+._.

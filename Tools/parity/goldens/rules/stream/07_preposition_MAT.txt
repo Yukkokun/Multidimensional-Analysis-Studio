@@ -1,0 +1,32 @@
+The_DT
+book_NN
+is_VPRT [BEMA]
+on_PIN
+the_DT
+table_NN
+._.
+He_TPP3
+walked_VBD
+to_PIN
+the_DT
+store_NN
+._.
+She_TPP3
+went_VBD
+to_PIN
+school_NN
+._.
+The_DT
+house_NN
+he_TPP3
+lives_VPRT
+in_PIN [STPR]
+._.
+The_DT
+plan_NN
+is_VPRT
+to_TO [SPIN]
+really_EMPH
+improve_VB
+things_NN
+._.

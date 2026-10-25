@@ -1,0 +1,10 @@
+Was_VBD
+the_DT
+report_NN
+finished_VBN
+?_.
+The_DT
+papers_NN
+were_VBD
+there_EX
+by_PIN

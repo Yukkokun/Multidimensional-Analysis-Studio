@@ -1,0 +1,14 @@
+Filename,Dimension1,Dimension2,Dimension3,Dimension4,Dimension5,Dimension6,Closest Text Type
+01_passive,-12.24,10.95,1.62,-9.27,7.73,-3.5,General narrative exposition
+02_that,42.43,5.16,1.62,-2.46,-3.92,13.17,Intimate interpersonal interaction
+03_wh,8.96,4.36,47.34,-9.27,-3.92,-3.5,Involved persuasion
+04_contraction,49.05,-3.21,-9.11,29.29,-3.92,-3.5,Intimate interpersonal interaction
+05_lexicon,43.8,12.35,1.62,4.66,-3.92,6.09,Intimate interpersonal interaction
+06_nominalization,3.7,-6.11,9.63,3.15,-3.92,-3.5,Involved persuasion
+07_preposition,17.5,5.55111512312578e-16,1.62,-2.66,-3.92,-3.5,Informational interaction
+08_start_to,33.5,-4.39,1.62,23.19,-3.92,-3.5,Informational interaction
+09_negative_index,-11.06,-0.0699999999999997,1.62,-9.27,-3.92,-3.5,General narrative exposition
+10_quantifier,74.73,0.21,-20.36,-9.27,-3.92,-3.5,Intimate interpersonal interaction
+11_coordination,10.9,-1.87,21.12,-9.27,3.65,-3.5,Involved persuasion
+12_short,15,-7.38,1.62,-9.27,-3.92,-3.5,Involved persuasion
+rules,23.02,0.83,5.00,-0.04,-2.32,-1.31,Informational interaction

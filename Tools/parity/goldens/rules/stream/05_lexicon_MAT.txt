@@ -1,0 +1,43 @@
+The_DT
+author_NN
+claims_VPRT [PUBV]
+that_THVC
+the_DT
+data_NN
+show_VPRT [PRIV]
+a_DT
+trend_NN
+._.
+We_FPP1
+believe_VPRT [PRIV] [THATD]
+this_DEMP
+is_VPRT [BEMA]
+correct_PRED
+._.
+They_TPP3
+suggest_VPRT [SUAV] [PUBV]
+another_DT
+approach_NN
+._.
+The_DT
+results_NN
+seem_VPRT [SMP]
+to_TO
+confirm_VB [PUBV]
+it_PIT
+._.
+She_TPP3
+appeared_VBD [SMP]
+tired_JJ
+._.
+It_PIT
+is_VPRT [BEMA]
+very_AMP
+good_PRED
+._.
+The_DT
+effect_NN
+was_VBD [BEMA]
+almost_DWNT
+significant_PRED
+._.

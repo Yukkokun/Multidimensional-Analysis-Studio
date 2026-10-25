@@ -1,0 +1,1 @@
+The_DT test_NN starts_VBZ here_RB ._. In_IN other_JJ words_NNS ,_, it_PRP failed_VBD ._. For_IN example_NN ,_, we_PRP tried_VBD ._. On_IN the_DT other_JJ hand_NN ,_, it_PRP worked_VBD ._. In_IN comparison_NN ,_, the_DT effect_NN was_VBD small_JJ ._.

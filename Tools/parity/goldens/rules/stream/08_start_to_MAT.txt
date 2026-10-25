@@ -1,0 +1,15 @@
+To_TO
+begin_VB
+,_,
+the_DT
+data_NN
+are_VPRT [BEMA]
+noisy_PRED
+._.
+To_TO
+be_VB [BEMA]
+honest_PRED
+,_,
+it_PIT
+failed_VBD
+._.

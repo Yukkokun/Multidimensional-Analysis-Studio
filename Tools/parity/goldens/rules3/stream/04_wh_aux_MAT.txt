@@ -1,0 +1,30 @@
+The_DT
+test_NN
+starts_VPRT
+here_RB
+._.
+How_RB [WHQU]
+could_POMD
+it_PIT
+work_VB
+?_.
+What_WP [WHQU]
+have_VPRT [PEAS]
+they_TPP3
+done_VBN
+?_.
+Why_RB [WHQU]
+is_VPRT [BEMA]
+it_PIT
+so_RB
+?_.
+It_PIT
+is_VPRT [BEMA]
+true_PRED
+._.
+So_RB [WHQU]
+what_WP
+is_VPRT [BEMA]
+the_DT
+point_NN
+?_.

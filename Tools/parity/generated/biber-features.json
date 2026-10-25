@@ -1,0 +1,265 @@
+{
+   "features" : [
+      {
+         "id" : "AMP",
+         "kind" : "tag"
+      },
+      {
+         "id" : "ANDC",
+         "kind" : "tag"
+      },
+      {
+         "id" : "[BEMA]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "[BYPA]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "CAUS",
+         "kind" : "tag"
+      },
+      {
+         "id" : "CONC",
+         "kind" : "tag"
+      },
+      {
+         "id" : "COND",
+         "kind" : "tag"
+      },
+      {
+         "id" : "CONJ",
+         "kind" : "tag"
+      },
+      {
+         "id" : "[CONT]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "DEMO",
+         "kind" : "tag"
+      },
+      {
+         "id" : "DEMP",
+         "kind" : "tag"
+      },
+      {
+         "id" : "DPAR",
+         "kind" : "tag"
+      },
+      {
+         "id" : "DWNT",
+         "kind" : "tag"
+      },
+      {
+         "id" : "EMPH",
+         "kind" : "tag"
+      },
+      {
+         "id" : "EX",
+         "kind" : "tag"
+      },
+      {
+         "id" : "FPP1",
+         "kind" : "tag"
+      },
+      {
+         "id" : "GER",
+         "kind" : "tag"
+      },
+      {
+         "id" : "HDG",
+         "kind" : "tag"
+      },
+      {
+         "id" : "INPR",
+         "kind" : "tag"
+      },
+      {
+         "id" : "JJ",
+         "kind" : "tag"
+      },
+      {
+         "id" : "NEMD",
+         "kind" : "tag"
+      },
+      {
+         "id" : "NN",
+         "kind" : "tag"
+      },
+      {
+         "id" : "NOMZ",
+         "kind" : "tag"
+      },
+      {
+         "id" : "OSUB",
+         "kind" : "tag"
+      },
+      {
+         "id" : "[PASS]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "[PASTP]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "[PEAS]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "PHC",
+         "kind" : "tag"
+      },
+      {
+         "id" : "PIN",
+         "kind" : "tag"
+      },
+      {
+         "id" : "[PIRE]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "PIT",
+         "kind" : "tag"
+      },
+      {
+         "id" : "PLACE",
+         "kind" : "tag"
+      },
+      {
+         "id" : "POMD",
+         "kind" : "tag"
+      },
+      {
+         "id" : "PRED",
+         "kind" : "tag"
+      },
+      {
+         "id" : "[PRESP]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "[PRIV]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "PRMD",
+         "kind" : "tag"
+      },
+      {
+         "id" : "[PROD]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "[PUBV]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "RB",
+         "kind" : "tag"
+      },
+      {
+         "id" : "[SERE]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "[SMP]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "[SPAU]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "[SPIN]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "SPP2",
+         "kind" : "tag"
+      },
+      {
+         "id" : "[STPR]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "[SUAV]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "SYNE",
+         "kind" : "tag"
+      },
+      {
+         "id" : "THAC",
+         "kind" : "tag"
+      },
+      {
+         "id" : "[THATD]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "THVC",
+         "kind" : "tag"
+      },
+      {
+         "id" : "TIME",
+         "kind" : "tag"
+      },
+      {
+         "id" : "TO",
+         "kind" : "tag"
+      },
+      {
+         "id" : "TOBJ",
+         "kind" : "tag"
+      },
+      {
+         "id" : "TPP3",
+         "kind" : "tag"
+      },
+      {
+         "id" : "TSUB",
+         "kind" : "tag"
+      },
+      {
+         "id" : "VBD",
+         "kind" : "tag"
+      },
+      {
+         "id" : "VPRT",
+         "kind" : "tag"
+      },
+      {
+         "id" : "[WHCL]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "[WHOBJ]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "[WHQU]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "[WHSUB]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "[WZPAST]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "[WZPRES]",
+         "kind" : "bracket"
+      },
+      {
+         "id" : "XX0",
+         "kind" : "tag"
+      }
+   ],
+   "source" : "MAT 1.3.3 count_only.pl"
+}

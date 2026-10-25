@@ -1,0 +1,7 @@
+Filename,Dimension1,Dimension2,Dimension3,Dimension4,Dimension5,Dimension6,Closest Text Type
+01_thvc_long,5.35,28.94,-4.52,16.9,-3.92,24.47,Imaginative narrative
+02_conjunct_multiword,15.51,-2.12,-0.66,-9.27,96.08,-3.5,Scientific exposition
+03_emphatic,52.76,-0.0199999999999999,-9.49,-4.31,-3.92,-3.5,Intimate interpersonal interaction
+04_wh_aux,48.31,2.49,-10.22,-9.27,-3.92,-3.5,Intimate interpersonal interaction
+05_chain,19.46,-7.38,19.05,-9.27,-3.92,-3.5,Involved persuasion
+rules3,28.28,4.38,-1.17,-3.04,16.08,2.09,Informational interaction

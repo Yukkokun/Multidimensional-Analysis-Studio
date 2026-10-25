@@ -1,0 +1,1 @@
+The_DT test_NN starts_VBZ here_RB ._. He_PRP left_VBD because_IN it_PRP rained_VBD ._. Although_IN it_PRP rained_VBD ,_, we_PRP went_VBD ._. If_IN it_PRP rains_VBZ ,_, we_PRP stay_VBP ._. Since_IN it_PRP rained_VBD ,_, we_PRP stayed_VBD ._.

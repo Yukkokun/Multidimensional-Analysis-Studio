@@ -1,0 +1,43 @@
+The_DT
+test_NN
+starts_VPRT
+here_RB
+._.
+He_TPP3
+did_VBD [PROD]
+it_PIT
+for_EMPH
+sure_NULL
+._.
+We_FPP1
+need_VPRT
+a_EMPH
+lot_NULL
+of_PIN
+time_NN
+._.
+It_PIT
+was_VBD [BEMA]
+such_EMPH
+a_NULL
+mess_NN
+._.
+It_PIT
+is_VPRT
+more_HDG
+or_NULL
+less_NULL
+fixed_JJ
+._.
+He_TPP3
+left_VBD
+soon_TIME
+._.
+He_TPP3
+tried_VBD
+to_TO [SPIN]
+really_EMPH
+quickly_RB
+improve_VB
+it_PIT
+._.

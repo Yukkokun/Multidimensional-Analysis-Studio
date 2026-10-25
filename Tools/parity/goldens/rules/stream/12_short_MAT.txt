@@ -1,0 +1,12 @@
+A_DT
+small_JJ
+corpus_NN
+is_VPRT [BEMA]
+useful_PRED
+._.
+It_PIT
+tests_VPRT
+the_DT
+short_JJ
+path_NN
+._.
