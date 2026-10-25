@@ -15,27 +15,6 @@ The analysis core is a Swift port that reproduces the original Perl implementati
   `left3words-wsj-0-18.tagger` model. Point the app at the folder in *Engine settings*, or import
   text that is already tagged as `word_TAG` — then no Java is needed.
 
-## Build
-
-```bash
-# Xcode
-open "Multidimensional Analysis MacTag/Multidimensional Analysis MacTag.xcodeproj"
-
-# or, without Xcode (SwiftPM only) — produces /tmp/matstudio/MA Studio.app
-Tools/ui-build/build-app.sh release
-```
-
-## Test
-
-```bash
-swift test --package-path Packages/MATCore          # 49 unit tests
-Tools/parity/verify-swift.sh                        # golden-file regression (L1 tokens, L2 Statistics, L3 z/dimensions)
-python3 Tools/groundtruth/compare.py <original-out> # end-to-end comparison against the original tool
-```
-
-`Tools/parity` needs the original Perl sources in `multidimensionalanalysistagger-source code/`
-at the repository root; that third-party code is **not** included here.
-
 ## Layout
 
 | Path | Contents |
