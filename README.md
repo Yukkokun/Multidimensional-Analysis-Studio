@@ -1,4 +1,4 @@
-# MA Studio
+<img width="976" height="702" alt="image" src="https://github.com/user-attachments/assets/20fe9f6f-6e7f-4866-9477-309039fc9577" /># MA Studio
 
 A native macOS app for **Multidimensional Analysis** of English text, following Douglas Biber's
 framework: tag parts of speech, count 67 linguistic features, convert them to z-scores, combine them
@@ -6,7 +6,6 @@ into six dimension scores, and identify the text type.
 
 The analysis core is a Swift port that reproduces the original Perl implementation byte for byte
 (token stream, `Statistics` 85 columns, `Zscores`, `Dimensions`), verified by golden-file regression.
-![Uploading image.png…]()
 
 
 ## Requirements
