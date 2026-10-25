@@ -6,6 +6,8 @@ into six dimension scores, and identify the text type.
 
 The analysis core is a Swift port that reproduces the original Perl implementation byte for byte
 (token stream, `Statistics` 85 columns, `Zscores`, `Dimensions`), verified by golden-file regression.
+![Uploading image.png…]()
+
 
 ## Requirements
 
