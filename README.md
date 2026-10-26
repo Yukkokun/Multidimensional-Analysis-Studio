@@ -10,7 +10,7 @@ The analysis core is a Swift port that reproduces the original Perl implementati
 
 ## Requirements
 
-- macOS 14 or later
+- macOS 14 or later (universial version: macOS 12 on intel and Apple silicon)
 - Xcode 15 (only for building the app target)
 - Optional, for part-of-speech tagging: Java 8+ and **stanford-postagger 3.1.4** with the
   `left3words-wsj-0-18.tagger` model. Point the app at the folder in *Engine settings*, or import
