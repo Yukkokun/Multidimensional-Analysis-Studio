@@ -1,5 +1,5 @@
 <img width="976" height="702" alt="image" src="https://github.com/user-attachments/assets/20fe9f6f-6e7f-4866-9477-309039fc9577" /># 
-<font size=30>**Windows version is coming soon!**</font>
+<font size=50>**Windows version is coming soon!**</font>
 
 MA Studio
 A native macOS app for **Multidimensional Analysis** of English text, following Douglas Biber's
