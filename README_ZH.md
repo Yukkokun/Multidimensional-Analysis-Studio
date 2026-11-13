@@ -1,22 +1,12 @@
 <div align="center">
 
-![MA Studio](docs/images/icon.png)
-
-# MA Studio
+<img src="docs/images/icon.png" width="120" alt="MA Studio" />
 
 **Biber 多维分析（Multidimensional Analysis）的原生桌面实现 · macOS 与 Windows**
 
 <sub>词性标注 → 统计 67 个语言特征 → 换算 z 分数 → 合成六个维度 → 判定文本类型</sub>
 
-[English](README.md) · **简体中文**
-
-![release](https://img.shields.io/github/v/release/Yukkokun/Multidimensional-Analysis-Studio?label=release\&color=orange)
-
-![license](https://img.shields.io/badge/license-GPL--3.0--only-blue)
-
-![macOS](https://img.shields.io/badge/macOS-12%2B-black?logo=apple\&logoColor=white)
-
-![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6?logo=windows\&logoColor=white)
+[![release](https://img.shields.io/github/v/release/Yukkokun/Multidimensional-Analysis-Studio?label=release&color=orange)](https://github.com/Yukkokun/Multidimensional-Analysis-Studio/releases/latest) [![license](https://img.shields.io/badge/license-GPL--3.0--only-blue)](LICENSE) ![macOS](https://img.shields.io/badge/macOS-12%2B-black?logo=apple&logoColor=white) ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6?logo=windows&logoColor=white)
 
 </div>
 
@@ -72,7 +62,8 @@ Windows 是 `MA-Studio-Windows-source.zip`（编译方法见包里的 `README-BU
 
 给普通用户的那份 Windows 包里只有程序和许可文本，不含源码。
 
-> 本仓库里的代码是历史快照，未必跟得上最新发布版。**要和某个版本完全对应的源码，>   
+> 本仓库里的代码是历史快照，未必跟得上最新发布版。**要和某个版本完全对应的源码，
+>   
 > 请用那个版本附带的 `-source.zip`**；两者不一致时以发布包的源码为准。
 
 ## 界面
