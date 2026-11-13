@@ -2,10 +2,14 @@
 
 <img src="docs/images/icon.png" width="120" alt="MA Studio" />
 
+# MA Studio
+
 **Biber 多维分析（Multidimensional Analysis）的原生桌面实现 · macOS 与 Windows**
 
 <sub>词性标注 → 统计 67 个语言特征 → 换算 z 分数 → 合成六个维度 → 判定文本类型</sub>
-![English](README.md) · **简体中文**
+
+[English](README.md) · **简体中文**
+
 [![release](https://img.shields.io/github/v/release/Yukkokun/Multidimensional-Analysis-Studio?label=release&color=orange)](https://github.com/Yukkokun/Multidimensional-Analysis-Studio/releases/latest) [![license](https://img.shields.io/badge/license-GPL--3.0--only-blue)](LICENSE) ![macOS](https://img.shields.io/badge/macOS-12%2B-black?logo=apple&logoColor=white) ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6?logo=windows&logoColor=white)
 
 </div>
