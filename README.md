@@ -10,13 +10,7 @@
 
 **English** · [简体中文](README_ZH.md)
 
-![release](https://img.shields.io/github/v/release/Yukkokun/Multidimensional-Analysis-Studio?label=release\&color=orange)
-
-![license](https://img.shields.io/badge/license-GPL--3.0--only-blue)
-
-![macOS](https://img.shields.io/badge/macOS-12%2B-black?logo=apple\&logoColor=white)
-
-![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6?logo=windows\&logoColor=white)
+[![release](https://img.shields.io/github/v/release/Yukkokun/Multidimensional-Analysis-Studio?label=release&color=orange)](https://github.com/Yukkokun/Multidimensional-Analysis-Studio/releases/latest) [![license](https://img.shields.io/badge/license-GPL--3.0--only-blue)](LICENSE) ![macOS](https://img.shields.io/badge/macOS-12%2B-black?logo=apple&logoColor=white) ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6?logo=windows&logoColor=white)
 
 </div>
 
