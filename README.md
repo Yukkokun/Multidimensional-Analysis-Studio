@@ -26,7 +26,7 @@
 >   
 > · Windows is a **portable** zip — unzip and double-click `MA Studio.exe`
 >
-> **Won't it open?** On macOS, if you see "cannot verify the developer", right-click the app → Open,
+> **Won't it open?** On macOS, if you see "cannot verify the developer", Seetings → Security and Privacy→ Open anyway,
 >   
 > or run `xattr -dr com.apple.quarantine /Applications/MA\ Studio.app`.
 >
