@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MA Studio — Multidimensional Analysis, done right</title>
+<meta name="description" content="Biber's multidimensional analysis as a native app for macOS and Windows. Byte-for-byte the same numbers as the original MAT.">
+<link rel="icon" href="images/icon.png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="logo" href="#top"><img src="images/icon.png" alt="">MA Studio</a>
+    <nav>
+      <a href="#features" data-zh="功能" data-en="Features">Features</a>
+      <a href="#download" data-zh="下载" data-en="Download">Download</a>
+      <a href="#changelog" data-zh="更新" data-en="Changelog">Changelog</a>
+      <a href="#cite" data-zh="引用" data-en="Cite">Cite</a>
+      <a href="https://github.com/Yukkokun/Multidimensional-Analysis-Studio" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <span class="grow"></span>
+    <div class="lang">
+      <button data-lang="zh" aria-pressed="false">中文</button>
+      <button data-lang="en" aria-pressed="true">EN</button>
+    </div>
+    <a class="pill" href="#download" data-zh="下载" data-en="Download">Download</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-in">
+      <p class="kicker" data-zh="Biber 多维分析 · macOS 与 Windows" data-en="Biber Multidimensional Analysis · macOS and Windows">Biber Multidimensional Analysis · macOS and Windows</p>
+      <h1 data-zh="把 MAT 算对，<br>再让它变得好看懂。" data-en="MAT, exactly.<br>Then made readable.">MAT, exactly.<br>Then made readable.</h1>
+      <p class="sub"
+         data-zh="67 个语言特征、六个维度、文本类型判定 —— 和 Perl 原版逐字节一致，装进一个能直接上手点的桌面应用。"
+         data-en="Sixty-seven features, six dimensions, a text-type verdict — the same numbers as the original Perl MAT, inside an app you can actually explore.">
+        Sixty-seven features, six dimensions, a text-type verdict — the same numbers as the original Perl MAT, inside an app you can explore.</p>
+      <div class="cta">
+        <a class="btn primary" href="#download" data-zh="下载" data-en="Download">Download</a>
+        <a class="btn" href="https://github.com/Yukkokun/Multidimensional-Analysis-Studio" target="_blank" rel="noopener" data-zh="查看源码" data-en="View source">View source</a>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="window">
+        <aside class="sb">
+          <div class="lights"><i></i><i></i><i></i></div>
+          <div class="sb-brand">
+            <div class="sb-icon"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M5 7h14M5 12h10M5 17h6"/></svg></div>
+            <div><b>MA Studio</b><span data-zh="多维度分析工作室" data-en="Multidimensional studio">Multidimensional studio</span></div>
+          </div>
+          <div class="sb-h"><span data-zh="语料库" data-en="Corpora">Corpora</span><em>2</em></div>
+          <div class="sb-scroll">
+            <button class="corpus is-on">
+              <span class="crow"><span class="cn">GroundTruth</span><span class="n">10</span></span>
+              <span class="cbars"><i style="height:6px"></i><i style="height:9px"></i><i style="height:5px"></i><i style="height:8px"></i><i style="height:7px"></i><i style="height:10px"></i></span>
+              <span class="ctype">Imaginative narrative</span>
+            </button>
+            <button class="corpus">
+              <span class="crow"><span class="cn">bulk</span><span class="n">3</span></span>
+              <span class="cbars"><i style="height:9px"></i><i style="height:6px"></i><i style="height:10px"></i><i style="height:5px"></i><i style="height:8px"></i><i style="height:6px"></i></span>
+              <span class="ctype">Involved persuasion</span>
+            </button>
+          </div>
+          <div class="sb-foot">
+            <button class="sb-import"><span class="plus">＋</span><span data-zh="导入语料" data-en="Import corpus">Import corpus</span><kbd>⌘O</kbd></button>
+            <div class="sb-engine"><i class="ok"></i><span data-zh="引擎就绪 · Java 8" data-en="Engine ready · Java 8">Engine ready · Java 8</span><span class="gear">⚙</span></div>
+          </div>
+        </aside>
+        <div class="main">
+          <div class="toolbar">
+            <button class="tb" title="Import (⌘O)"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v8m0 0 3-3m-3 3L5 7M3 12.5h10"/></svg></button>
+            <button class="tb" title="Re-run (⌘R)"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8a5 5 0 1 1-1.6-3.7M13 3v3.2h-3.2"/></svg></button>
+            <span class="grow"></span>
+            <button class="tb" title="Analysis settings"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M2 5h12M2 11h12"/><circle cx="6" cy="5" r="1.7" fill="#fff"/><circle cx="10" cy="11" r="1.7" fill="#fff"/></svg></button>
+            <button class="tb" title="Export"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 10V2m0 0L5 5m3-3 3 3M3 10v3.5h10V10"/></svg></button>
+          </div>
+          <div class="head">
+            <div>
+              <div class="corpus-name" id="hero-name">GroundTruth</div>
+              <div class="corpus-meta" id="hero-meta">—</div>
+            </div>
+            <button class="picker" data-zh="语料整体" data-en="Whole corpus">Whole corpus</button>
+          </div>
+          <div class="tabs" id="hero-tabs"></div>
+          <div class="pane" id="hero-pane"></div>
+        </div>
+      </div>
+      <p class="stage-note" data-zh="↑ 这是真的界面：点页签、切维度、悬停柱子看数值。" data-en="↑ this is the real interface — switch tabs, pick a dimension, hover a bar.">
+        ↑ this is the real interface — switch tabs, pick a dimension, hover a bar.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="band-in">
+      <div><b>67</b><span data-zh="个语言特征，Biber 1988 的完整清单" data-en="features — the full Biber 1988 list">features — the full Biber 1988 list</span></div>
+      <div><b>3</b><span data-zh="层输出：token 流 / Statistics / Dimensions" data-en="output layers: token stream, Statistics, Dimensions">output layers</span></div>
+      <div><b>0</b><span data-zh="处与原版脚本的差异，逐字节比对" data-en="differences from the original scripts">differences</span></div>
+    </div>
+  </section>
+
+  <section class="feat" id="features">
+    <div class="feat-in">
+      <div class="copy">
+        <p class="kicker">01 — <span data-zh="概览" data-en="Overview">Overview</span></p>
+        <h2 data-zh="先回答「这是什么语料」" data-en="First: what corpus is this?">First: what corpus is this?</h2>
+        <p data-zh="词数、篇数、平均词长、类符数；六个维度的得分，以及每个得分最接近的参考体裁；文本类型按距离排好。一屏之内就知道方向和分寸。"
+           data-en="Words, documents, average word length, types. Six dimension scores, each with the reference genre it lands nearest to. Text types ranked by distance. One screen tells you where the corpus sits.">
+          Words, documents, six dimension scores, and text types ranked by distance.</p>
+        <ul class="points">
+          <li data-zh="单篇模式：选中一篇，所有页面按那一篇重算" data-en="Single-document mode: pick one document and everything recomputes">Single-document mode</li>
+          <li data-zh="每个维度直接标出偏向哪一端" data-en="Each dimension states which pole it leans to">Each dimension states its pole</li>
+        </ul>
+      </div>
+      <div class="frame"><div id="app-overview"></div></div>
+    </div>
+
+    <div class="feat-in flip">
+      <div class="copy">
+        <p class="kicker">02 — <span data-zh="维度" data-en="Dimension">Dimension</span></p>
+        <h2 data-zh="你的语料落在谁旁边" data-en="Where it lands among the genres">Where it lands among the genres</h2>
+        <p data-zh="八个参考体裁在同一维度上的分布区间，你的语料叠上去。参考表的两列距离都能点着排序 —— 点哪列，就按哪列排。"
+           data-en="Eight reference genres with their ranges on one dimension, your corpus overlaid. Both distance columns sort: click either header.">
+          Eight reference genres and their ranges, with your corpus overlaid.</p>
+        <ul class="points">
+          <li data-zh="叠加第二个语料，两根棒同框" data-en="Overlay a second corpus in the same frame">Overlay a second corpus</li>
+          <li data-zh="点表头排序，箭头会跟着转向" data-en="Click a header to sort; the arrow follows">Sortable reference table</li>
+        </ul>
+      </div>
+      <div class="frame"><div id="app-dimension"></div></div>
+    </div>
+
+    <div class="feat-in">
+      <div class="copy">
+        <p class="kicker">03 — <span data-zh="文本类型" data-en="Text type">Text type</span></p>
+        <h2 data-zh="轮廓对不对，一眼看出来" data-en="Does the profile fit?">Does the profile fit?</h2>
+        <p data-zh="八个参考类型的轮廓压在底下，你的语料均值走在上面，逐篇曲线淡淡地作背景。哪一段偏离，就是哪一类特征在起作用。"
+           data-en="Eight reference profiles sit behind your corpus mean, with per-document curves fading in as context. Where the line departs is where the difference lives.">
+          Eight reference profiles behind your corpus mean, per-document curves as context.</p>
+        <ul class="points">
+          <li data-zh="语料越大，逐篇曲线越淡，不会糊成一片" data-en="Per-document lines fade as the corpus grows">Per-document lines fade out</li>
+        </ul>
+      </div>
+      <div class="frame"><div id="app-texttype"></div></div>
+    </div>
+
+    <div class="feat-in flip">
+      <div class="copy">
+        <p class="kicker">04 — <span data-zh="特征" data-en="Feature">Feature</span></p>
+        <h2 data-zh="到底是哪个变量在动" data-en="Which variable actually moved">Which variable actually moved</h2>
+        <p data-zh="67 个特征的每百词频次与 z 值，按维度筛选，或者只看 |z| &gt; 2 的「有意思的变量」。极端 z 不会把表格撑破。"
+           data-en="Frequency per hundred words and a z-score for all 67 features — filter by dimension, or down to the interesting |z| &gt; 2 set. Extreme z values won't wreck the layout.">
+          Frequency and z for all 67 features, filterable by dimension.</p>
+        <ul class="points">
+          <li data-zh="[SPIN] 这类 sd≈0 的特征标 ⚠，不印 8000.00" data-en="Features like [SPIN] with sd≈0 get a ⚠ instead of 8000.00">Extremes are flagged</li>
+        </ul>
+      </div>
+      <div class="frame"><div id="app-feature"></div></div>
+    </div>
+
+    <div class="feat-in">
+      <div class="copy">
+        <p class="kicker">05 — <span data-zh="对比" data-en="Compare">Compare</span></p>
+        <h2 data-zh="两组语料，一个结论" data-en="Two corpora, one verdict">Two corpora, one verdict</h2>
+        <p data-zh="逐特征的 Welch's t 与 Mann–Whitney U；Z 对比再叠上 BH-FDR / Holm 校正。做了 67 次检验，显著性不该因此虚高。"
+           data-en="Welch's t and Mann–Whitney U per feature, with BH-FDR or Holm on top. Run 67 tests and significance shouldn't inflate by itself.">
+          Welch's t and Mann–Whitney U per feature, plus BH-FDR or Holm.</p>
+        <ul class="points">
+          <li data-zh="分布页先看正态性，再决定用哪个检验" data-en="The distribution page checks normality before you choose a test">Normality before the test</li>
+        </ul>
+      </div>
+      <div class="frame"><div id="app-zcompare"></div></div>
+    </div>
+  </section>
+
+  <section class="fidelity">
+    <div class="fid-in">
+      <p class="kicker" data-zh="一致性" data-en="Fidelity">Fidelity</p>
+      <h2 data-zh="数字不对，界面再好看也没用" data-en="Pretty charts are worthless if the numbers drift">Pretty charts are worthless if the numbers drift</h2>
+      <p class="fid-lead"
+         data-zh="内核从原版 MAT 的 Perl 源码逐条移植，四套语料 × 三层输出逐字节比对。连原版的缺陷也留着 —— 因为它们会改变结果。"
+         data-en="The core was ported rule by rule from MAT's Perl sources and checked byte for byte across four corpora and three output layers. The original's bugs are kept too, because they change the numbers.">
+        Ported rule by rule from MAT's Perl sources, checked byte for byte. The original's bugs are kept too.</p>
+      <div class="fid-grid">
+        <div>
+          <h3 data-zh="取整照原版" data-en="Rounding follows the original">Rounding follows the original</h3>
+          <p data-zh="频次取整、z 取整、维度和不取整。5.55e-16 是正常的，不是没处理浮点。" data-en="Frequencies and z-scores are rounded, dimension sums are not. A value like 5.55e-16 is expected.">Frequencies and z rounded, dimension sums not.</p>
+        </div>
+        <div>
+          <h3 data-zh="缺陷一并复刻" data-en="Quirks preserved">Quirks preserved</h3>
+          <p data-zh="短文本 TTR 的 +1、开头几个词的判定依赖结尾、INPR 被 QUPR 覆盖 —— 全留着。" data-en="The short-text TTR +1, judging opening words by the file's end, INPR shadowed by QUPR — all kept.">Short-text TTR +1, INPR shadowed by QUPR.</p>
+        </div>
+        <div>
+          <h3 data-zh="可以自己验" data-en="You can verify it">You can verify it</h3>
+          <p data-zh="仓库里有 golden 语料和比对脚本，跑同一批文本，CSV 能对上。" data-en="The repo ships the golden corpora and the comparison script, so you can reproduce the CSVs.">Golden corpora and scripts are in the repo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dl" id="download">
+    <div class="dl-in">
+      <p class="kicker" data-zh="下载" data-en="Download">Download</p>
+      <h2 data-zh="选好版本，直接下载" data-en="Pick a version, download directly">Pick a version, download directly</h2>
+      <p class="dl-lead" id="dl-lead"></p>
+
+      <div class="dl-card">
+        <div class="dl-row">
+          <div class="field">
+            <span data-zh="系统" data-en="Platform">Platform</span>
+            <div class="seg" id="dl-os">
+              <button data-os="windows" aria-pressed="false">Windows</button>
+              <button data-os="mac" aria-pressed="false">macOS</button>
+            </div>
+          </div>
+          <div class="field">
+            <span data-zh="版本" data-en="Version">Version</span>
+            <select id="dl-version"></select>
+          </div>
+          <div class="field" id="dl-chip-field">
+            <span data-zh="芯片" data-en="Chip">Chip</span>
+            <div class="seg" id="dl-chip">
+              <button data-chip="universal" aria-pressed="true" data-zh="通用" data-en="Universal">Universal</button>
+              <button data-chip="arm" aria-pressed="false" data-zh="Apple 芯片" data-en="Apple silicon">Apple silicon</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dl-go">
+          <a class="btn primary big" id="dl-primary" href="#">
+            <span class="l1" id="dl-primary-label">Download</span>
+            <span class="l2" id="dl-primary-file"></span>
+          </a>
+          <div class="dl-alt">
+            <a id="dl-source" href="#"><span data-zh="源码包" data-en="Source bundle">Source bundle</span> <span id="dl-source-size" class="sz"></span></a>
+            <span class="sep">·</span>
+            <a id="dl-notes" href="#"><span data-zh="版本说明" data-en="Release notes">Release notes</span></a>
+          </div>
+        </div>
+
+        <div class="dl-foot">
+          <div id="dl-hint" class="hint"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="log" id="changelog">
+    <div class="log-in">
+      <p class="kicker" data-zh="更新" data-en="Changelog">Changelog</p>
+      <div class="log-list">
+        <article>
+          <time>1.3.2 · 2026-11-13</time>
+          <h3 data-zh="Professional 外观，Windows 版发布" data-en="Professional appearance, and the Windows build">Professional appearance, and the Windows build</h3>
+          <p data-zh="新的「专业」主题：石板灰卡片、单一靛蓝强调色；页签收紧到一屏；特征页支持 |z| &gt; 2；Z 对比表头可排序。Windows 版首次发布。" data-en="A new Professional theme — slate cards, one indigo accent — tighter tabs, the |z| &gt; 2 filter, sortable Z-compare headers, and the first Windows release.">New Professional theme, tighter tabs, |z| &gt; 2 filter, sortable Z-compare. First Windows release.</p>
+        </article>
+        <article>
+          <time>1.2.1 · 2026-10</time>
+          <h3 data-zh="修复在其他 Mac 上分析结束崩溃" data-en="Fixed a crash at the end of analysis on other Macs">Fixed a crash at the end of analysis on other Macs</h3>
+          <p data-zh="资源包随 app 一起分发，按多路径查找；缺失时明确提示，而不是中途崩溃。" data-en="The resource bundle now ships inside the app and is located by searching several paths; a missing bundle reports itself instead of crashing.">Resource bundle ships inside the app now.</p>
+        </article>
+        <article>
+          <time data-zh="更早" data-en="Earlier">Earlier</time>
+          <h3><a href="https://github.com/Yukkokun/Multidimensional-Analysis-Studio/releases" target="_blank" rel="noopener" data-zh="全部版本与说明 →" data-en="All releases and notes →">All releases and notes →</a></h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cite" id="cite">
+    <div class="cite-in">
+      <p class="kicker" data-zh="引用" data-en="Cite">Cite</p>
+      <h2 data-zh="写论文时请引用" data-en="Cite it in your paper">Cite it in your paper</h2>
+      <p class="fid-lead" data-zh="框架和这个实现是两条来源，建议都列。" data-en="The framework and this implementation are two separate sources — cite both.">The framework and this implementation are two separate sources.</p>
+      <div class="code">
+        <button id="copy" data-zh="复制" data-en="Copy">Copy</button>
+        <pre id="bib">@book{biber1988variation,
+  title     = {Variation across Speech and Writing},
+  author    = {Biber, Douglas},
+  year      = {1988},
+  publisher = {Cambridge University Press}
+}
+
+@misc{mastudio,
+  title        = {MA Studio: a desktop implementation of
+                  Multidimensional Analysis},
+  author       = {Michael L.},
+  year         = {2026},
+  howpublished = {GNU GPLv3, byte-for-byte compatible with MAT},
+  url          = {https://github.com/Yukkokun/Multidimensional-Analysis-Studio}
+}</pre>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot-in">
+      <div class="foot-brand">
+        <img src="images/icon.png" alt="">
+        <div>
+          <b>MA Studio</b>
+          <span data-zh="GNU GPL v3 · 与原版 MAT 作者无隶属关系" data-en="GNU GPL v3 · not affiliated with the authors of MAT">GNU GPL v3</span>
+        </div>
+      </div>
+      <div class="foot-links">
+        <a href="https://github.com/Yukkokun/Multidimensional-Analysis-Studio" target="_blank" rel="noopener" data-zh="源码" data-en="Source">Source</a>
+        <a href="https://github.com/Yukkokun/Multidimensional-Analysis-Studio/issues" target="_blank" rel="noopener">Issues</a>
+        <a href="https://github.com/Yukkokun/Multidimensional-Analysis-Studio/blob/main/LICENSE" target="_blank" rel="noopener">License</a>
+        <a href="#download" data-zh="下载" data-en="Download">Download</a>
+      </div>
+      <div class="foot-credit">
+        <span data-zh="框架 Douglas Biber（1988）· 原版 MAT Andrea Nini · 字体 Nunito" data-en="Framework Douglas Biber (1988) · Original MAT Andrea Nini · Type Nunito">Framework Biber (1988) · MAT Nini · Type Nunito</span>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
