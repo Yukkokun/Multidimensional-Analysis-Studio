@@ -47,8 +47,8 @@ const TAB_ICON = { overview: 'overview', dimension: 'dimension', sixdim: 'sixdim
   feature: 'feature', distribution: 'distribution', compare: 'compare', zcompare: 'zcompare' };
 
 const TABS = [
-  ['overview', 'Overview', '概览'], ['dimension', 'Dimension', '维度'], ['sixdim', 'Six dims', '六维'],
-  ['texttype', 'Text type', '文本类型'], ['feature', 'Feature', '特征'], ['distribution', 'Distribution', '分布'],
+  ['overview', 'Overview', '概览'], ['dimension', 'Dimensions', '维度'], ['sixdim', 'Six dims', '六维'],
+  ['texttype', 'Text type', '文本类型'], ['feature', 'Features', '特征'], ['distribution', 'Distribution', '分布'],
   ['compare', 'Compare', '对比'], ['zcompare', 'Z-compare', 'Z 对比'],
 ];
 
@@ -153,10 +153,10 @@ function pOverview(st) {
   const maxD = Math.max(...rank.map((r) => r.d));
 
   const tiles = [
-    [t('words'), f0(A.tokens), `${A.docs.length} ${t('docs')}`],
-    [t('docs'), A.docs.length, ''],
-    [t('awl'), fx(A.awl, 2), ''],
-    [t('types'), f0(A.types), ''],
+    [LANG === 'en' ? 'Words' : '词数', f0(A.tokens), ''],
+    [LANG === 'en' ? 'Docs' : '篇数', A.docs.length, ''],
+    [LANG === 'en' ? 'Avg. length' : '平均词长', fx(A.awl, 2), ''],
+    [LANG === 'en' ? 'Types' : '类符', f0(A.types), ''],
   ].map(([k, v, s]) => `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div><div class="s">${s}</div></div>`).join('');
 
   const cards = DIMS.map((d, i) => {
@@ -173,7 +173,7 @@ function pOverview(st) {
     const w = 100 - (r.d / (maxD || 1)) * 100;
     return `<div style="display:flex;align-items:center;gap:8px;padding:4px 0;border-bottom:1px solid rgba(11,11,15,.04)">
       <span style="width:10px;color:#9A9AA4;font-size:9.5px">${i + 1}</span>
-      <span style="flex:1;font-size:11.5px;${i === 0 ? 'font-weight:600' : ''};overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(typeName(r.id))}</span>
+      <span style="flex:1;min-width:0;font-size:11px;line-height:1.25;${i === 0 ? 'font-weight:600' : ''}">${esc(typeName(r.id))}</span>
       <span style="width:52px;height:4px;background:#EFF0F4;border-radius:2px;overflow:hidden"><span style="display:block;height:100%;width:${w}%;background:${i === 0 ? '#4B57E0' : '#C9CCD8'}"></span></span>
       <span style="width:28px;text-align:right;font-size:9.5px;color:#9A9AA4">${fx(r.d, 1)}</span>
     </div>`;
@@ -197,11 +197,13 @@ function pDimension(st) {
   series.push({ key: 'A', label: A.name, short: A.name.slice(0, 9), lo: A.lo[st.dim], hi: A.hi[st.dim], mean: A.dims[st.dim], kind: 'a' });
   if (B) series.push({ key: 'B', label: B.name, short: B.name.slice(0, 9), lo: B.lo[st.dim], hi: B.hi[st.dim], mean: B.dims[st.dim], kind: 'b' });
 
-  const lo = Math.min(...series.map((s) => s.lo));
-  const hi = Math.max(...series.map((s) => s.hi));
-  const W = 520, H = 286, PL = 30, PB = 34, PT = 8;
+  const rawLo = Math.min(...series.map((s) => s.lo));
+  const rawHi = Math.max(...series.map((s) => s.hi));
+  const pad = Math.max(2, (rawHi - rawLo) * 0.08);
+  const lo = rawLo - pad, hi = rawHi + pad;
+  const W = st.w || 520, H = 322, PL = 34, PB = 46, PT = 10;
   const y = (v) => PT + ((hi - v) / (hi - lo)) * (H - PT - PB);
-  const ticks = niceTicks(lo, hi, 4);
+  const ticks = niceTicks(lo, hi, 5);
 
   const grid = ticks.map((v) => {
     const zero = Math.abs(v) < 1e-9;
@@ -241,12 +243,19 @@ function pDimension(st) {
       <button class="chip" data-compare aria-pressed="${!!st.compare}">${t('compare')}: ${st.compare ? t('on') : t('off')}</button>
     </div>
     <div class="card" style="margin-bottom:10px">
-      <h3 class="h">${DIMS[st.dim].code} · ${esc(dimName(st.dim))}</h3>
+      <div class="chart-head">
+        <span class="chart-title">${DIMS[st.dim].code} · ${esc(dimName(st.dim))}</span>
+        <span class="chart-badge">${esc(A.name)} ${fx(A.dims[st.dim], 2)}</span>
+      </div>
       <svg viewBox="0 0 ${W} ${H}" width="100%" height="${H}">${grid}${bars}</svg>
       <div class="legend"><span><i style="background:#BFC4D2"></i>${t('ref')}</span><span><i style="background:#4B57E0"></i>${esc(A.name)}</span>${B ? `<span><i style="background:#B5654A"></i>${esc(B.name)}</span>` : ''}</div>
     </div>
-    <div class="card"><h3 class="h">${t('refdata')}</h3>
-      <table class="tbl"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>`;
+    <div class="card">
+      <div class="chart-head">
+        <span class="chart-title">${t('refdata')}</span>
+        <span class="chart-hint">${LANG === 'en' ? 'Biber 1988 genre means and ranges' : 'Biber 1988 的体裁均值与区间'}</span>
+      </div>
+      <table class="tbl dim"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>`;
 }
 
 function pSixdim(st) {
@@ -254,7 +263,7 @@ function pSixdim(st) {
   const B = st.compare ? agg(DATA.corpora[1]) : null;
   const all = [...DATA.genres.flatMap((g) => [...g.rangeLow, ...g.rangeHigh]), ...A.dims, ...(B ? B.dims : [])];
   const lo = Math.min(...all), hi = Math.max(...all);
-  const W = 520, PL = 72, rowH = 34, H = rowH * 6 + 20;
+  const W = st.w || 520, PL = 72, rowH = 34, H = rowH * 6 + 20;
   const x = (v) => PL + ((v - lo) / (hi - lo)) * (W - PL - 14);
   const ticks = niceTicks(lo, hi, 4);
   const grid = ticks.map((v) => `<line x1="${x(v)}" x2="${x(v)}" y1="4" y2="${H - 16}" stroke="${Math.abs(v) < 1e-9 ? '#D6D9E3' : '#F0F1F5'}"/>
@@ -276,7 +285,7 @@ function pTexttype(st) {
   const m = 5;
   const all = [...DATA.textTypes.flatMap((r) => r.dimension.slice(0, m)), ...A.dims.slice(0, m)];
   const lo = Math.min(...all) - 4, hi = Math.max(...all) + 4;
-  const W = 520, H = 280, PL = 30, PB = 28, PT = 10;
+  const W = st.w || 520, H = 280, PL = 30, PB = 28, PT = 10;
   const x = (i) => PL + (i / (m - 1)) * (W - PL - 26);
   const y = (v) => PT + ((hi - v) / (hi - lo)) * (H - PT - PB);
   const grid = niceTicks(lo, hi, 4).map((v) => `<line x1="${PL}" x2="${W - 10}" y1="${y(v)}" y2="${y(v)}" stroke="${Math.abs(v) < 1e-9 ? '#D6D9E3' : '#F0F1F5'}"/>
@@ -315,7 +324,7 @@ function pFeature(st) {
       ${DIMS.map((d, i) => `<button class="chip" data-filter="${i + 1}" aria-pressed="${st.filter === String(i + 1)}">${d.code}</button>`).join('')}
       <button class="chip" data-filter="z2" aria-pressed="${st.filter === 'z2'}">${t('onlyZ')}</button>
     </div>
-    <div class="card table-wrap"><table class="tbl"><thead><tr>
+    <div class="card table-wrap"><table class="tbl feat"><thead><tr>
       <th class="l">${t('feature')}</th><th class="l">${t('meaning')}</th>
       <th data-sortf="freq">${t('freq')}</th><th data-sortf="z">${t('z')}</th><th class="l"></th>
     </tr></thead><tbody>${body}</tbody></table></div>`;
@@ -331,7 +340,7 @@ function pDistribution(st) {
   vals.forEach((v) => { counts[Math.min(bins - 1, Math.max(0, Math.floor((v - x0) / bw)))]++; });
   const peak = s > 0 ? (1 / (s * Math.sqrt(2 * Math.PI))) * bw * vals.length : 0;
   const yMax = Math.max(...counts, peak, 1);
-  const W = 520, H = 250, PL = 30, PB = 24, PT = 12;
+  const W = st.w || 520, H = 250, PL = 30, PB = 24, PT = 12;
   const x = (v) => PL + ((v - x0) / (x1 - x0)) * (W - PL - 12);
   const y = (c) => PT + (1 - c / yMax) * (H - PT - PB);
   const bars = counts.map((c, i) => {
@@ -413,7 +422,7 @@ function pCompare(st, mode) {
       <span style="font-size:10px;color:#9A9AA4">${t('correction')}</span>
       ${['bh', 'holm', 'none'].map((k) => `<button class="chip" data-corr="${k}" aria-pressed="${st.corr === k}">${T2(k)}</button>`).join('')}
     </div>
-    <div class="card table-wrap"><table class="tbl"><thead><tr>
+    <div class="card table-wrap"><table class="tbl cmp"><thead><tr>
       <th class="l">${t('feature')}</th><th class="l">${t('meaning')}</th>
       ${mode === 'z' ? `<th>z ${esc(DATA.corpora[0].name)}</th><th>z ${esc(DATA.corpora[1].name)}</th>`
                      : `<th>${esc(DATA.corpora[0].name)}</th><th>${esc(DATA.corpora[1].name)}</th>`}
@@ -436,7 +445,10 @@ function mount(el, over) {
   }, over);
 
   el.classList.add('pane', 'inst-' + (++MADE));
-  const draw = () => { el.innerHTML = PAGES[st.tab](st); };
+  const draw = () => {
+    st.w = Math.max(340, Math.round(el.clientWidth - 8));
+    el.innerHTML = PAGES[st.tab](st);
+  };
 
   el.addEventListener('click', (e) => {
     const n = e.target.closest('[data-dim],[data-compare],[data-docs],[data-filter],[data-corr],[data-goto],[data-sort],[data-sortf]');
@@ -484,10 +496,12 @@ function mountHero() {
       document.getElementById('hero-meta').textContent = meta(A);
     });
   });
-  tabsEl.querySelector('.tab').setAttribute('aria-selected', 'true');
+  const want = new URLSearchParams(location.search).get('tab');
+  const first = TABS.some(([id]) => id === want) ? want : 'overview';
+  tabsEl.querySelectorAll('.tab').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === first)));
 
   paneEl.innerHTML = '';
-  heroInstance = mount(paneEl, { tab: 'overview' });
+  heroInstance = mount(paneEl, { tab: first });
 
   const A = agg(DATA.corpora[0]);
   document.getElementById('hero-name').textContent = A.name;
