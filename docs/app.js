@@ -218,8 +218,8 @@ function pDimension(st) {
     const top = y(Math.max(s.lo, s.hi)), bot = y(Math.min(s.lo, s.hi));
     const color = s.kind === 'ref' ? '#BFC4D2' : s.kind === 'a' ? '#4B57E0' : '#B5654A';
     return `<g><title>${esc(s.label)} · ${fx(s.mean, 2)} (${fx(s.lo, 1)} ~ ${fx(s.hi, 1)})</title>
-      <rect x="${cx - w / 2}" y="${top}" width="${w}" height="${Math.max(1, bot - top)}" rx="3" fill="${color}" opacity="${s.kind === 'ref' ? .6 : 1}"/>
-      <circle cx="${cx}" cy="${y(s.mean)}" r="${s.kind === 'ref' ? 2 : 3}" fill="${s.kind === 'ref' ? '#6B7280' : color}"/>
+      <rect class="bar" style="--i:${i}" x="${cx - w / 2}" y="${top}" width="${w}" height="${Math.max(1, bot - top)}" rx="3" fill="${color}" opacity="${s.kind === 'ref' ? .6 : 1}"/>
+      <circle class="dot" style="--i:${i}" cx="${cx}" cy="${y(s.mean)}" r="${s.kind === 'ref' ? 2 : 3}" fill="${s.kind === 'ref' ? '#6B7280' : color}"/>
       <text x="${cx}" y="${H - 32}" text-anchor="middle" font-size="9" fill="#9A9AA4">${esc(s.short || s.label.slice(0, 9))}</text></g>`;
   }).join('');
 
@@ -247,7 +247,7 @@ function pDimension(st) {
         <span class="chart-title">${DIMS[st.dim].code} · ${esc(dimName(st.dim))}</span>
         <span class="chart-badge">${esc(A.name)} ${fx(A.dims[st.dim], 2)}</span>
       </div>
-      <svg viewBox="0 0 ${W} ${H}" width="100%" height="${H}">${grid}${bars}</svg>
+      <svg data-chart viewBox="0 0 ${W} ${H}" width="100%" height="${H}">${grid}${bars}</svg>
       <div class="legend"><span><i style="background:#BFC4D2"></i>${t('ref')}</span><span><i style="background:#4B57E0"></i>${esc(A.name)}</span>${B ? `<span><i style="background:#B5654A"></i>${esc(B.name)}</span>` : ''}</div>
     </div>
     <div class="card">
@@ -270,13 +270,13 @@ function pSixdim(st) {
     <text x="${x(v)}" y="${H - 4}" text-anchor="middle" font-size="9" fill="#9A9AA4">${v}</text>`).join('');
   const rows = DIMS.map((d, i) => {
     const y0 = 8 + i * rowH;
-    const bar = (v, color, off) => `<rect x="${Math.min(x(0), x(v))}" y="${y0 + off}" width="${Math.max(1, Math.abs(x(v) - x(0)))}" height="8" rx="3" fill="${color}"><title>${fx(v, 2)}</title></rect>`;
+    const bar = (v, color, off, i) => `<rect class="bar-x" style="--i:${i}" x="${Math.min(x(0), x(v))}" y="${y0 + off}" width="${Math.max(1, Math.abs(x(v) - x(0)))}" height="8" rx="3" fill="${color}"><title>${fx(v, 2)}</title></rect>`;
     return `<text x="${PL - 10}" y="${y0 + 14}" text-anchor="end" font-size="9.5" fill="#6B6B76">${d.code}</text>
-      ${bar(A.dims[i], '#4B57E0', 0)}${B ? bar(B.dims[i], '#B5654A', 11) : ''}`;
+      ${bar(A.dims[i], '#4B57E0', 0, i)}${B ? bar(B.dims[i], '#B5654A', 11, i) : ''}`;
   }).join('');
   return `<div class="chips"><span style="flex:1"></span>
       <button class="chip" data-compare aria-pressed="${!!st.compare}">${t('compare')}: ${st.compare ? t('on') : t('off')}</button></div>
-    <div class="card"><svg viewBox="0 0 ${W} ${H}" width="100%" height="${H}">${grid}${rows}</svg>
+    <div class="card"><svg data-chart viewBox="0 0 ${W} ${H}" width="100%" height="${H}">${grid}${rows}</svg>
       <div class="legend"><span><i style="background:#4B57E0"></i>${esc(A.name)}</span>${B ? `<span><i style="background:#B5654A"></i>${esc(B.name)}</span>` : ''}</div></div>`;
 }
 
@@ -292,13 +292,13 @@ function pTexttype(st) {
     <text x="${PL - 6}" y="${y(v) + 3}" text-anchor="end" font-size="9" fill="#9A9AA4">${v}</text>`).join('');
   const axis = DIMS.slice(0, m).map((d, i) => `<text x="${x(i)}" y="${H - 7}" text-anchor="middle" font-size="9" fill="#9A9AA4">${d.code}</text>`).join('');
   const pts = (vals) => vals.slice(0, m).map((v, i) => [x(i), y(v)]);
-  const refs = DATA.textTypes.map((r) => `<path d="${smooth(pts(r.dimension))}" fill="none" stroke="#C9CCD8" stroke-width="1.2"><title>${esc(typeName(r.id))}</title></path>`).join('');
-  const docs = st.docs ? A.docs.map((d) => `<path d="${smooth(pts(d.dims))}" fill="none" stroke="#4B57E0" stroke-width="1" opacity=".14"/>`).join('') : '';
-  const line = `<path d="${smooth(pts(A.dims))}" fill="none" stroke="#4B57E0" stroke-width="2.4" stroke-linecap="round"/>
-    ${A.dims.slice(0, m).map((v, i) => `<circle cx="${x(i)}" cy="${y(v)}" r="3" fill="#fff" stroke="#4B57E0" stroke-width="2"/>`).join('')}`;
+  const refs = DATA.textTypes.map((r, i) => `<path class="draw" style="--i:${i}" pathLength="1" d="${smooth(pts(r.dimension))}" fill="none" stroke="#C9CCD8" stroke-width="1.2"><title>${esc(typeName(r.id))}</title></path>`).join('');
+  const docs = st.docs ? A.docs.map((d, i) => `<path class="draw" style="--i:${i + 2}" pathLength="1" d="${smooth(pts(d.dims))}" fill="none" stroke="#4B57E0" stroke-width="1" opacity=".14"/>`).join('') : '';
+  const line = `<path class="draw" style="--i:10" pathLength="1" d="${smooth(pts(A.dims))}" fill="none" stroke="#4B57E0" stroke-width="2.4" stroke-linecap="round"/>
+    ${A.dims.slice(0, m).map((v, i) => `<circle class="dot" style="--i:${i}" cx="${x(i)}" cy="${y(v)}" r="3" fill="#fff" stroke="#4B57E0" stroke-width="2"/>`).join('')}`;
   return `<div class="chips"><button class="chip" data-docs aria-pressed="${!!st.docs}">${t('perDoc')}: ${st.docs ? t('on') : t('off')}</button>
       <span style="flex:1"></span><span style="font-size:10.5px;color:#9A9AA4">${esc(typeName(ranking(A)[0].id))}</span></div>
-    <div class="card"><svg viewBox="0 0 ${W} ${H}" width="100%" height="${H}">${grid}${refs}${docs}${line}${axis}</svg>
+    <div class="card"><svg data-chart viewBox="0 0 ${W} ${H}" width="100%" height="${H}">${grid}${refs}${docs}${line}${axis}</svg>
       <div class="legend"><span><i style="background:#4B57E0"></i>${esc(A.name)} mean</span><span><i style="background:#C9CCD8"></i>${t('refTypes')}</span></div></div>`;
 }
 
@@ -345,7 +345,7 @@ function pDistribution(st) {
   const y = (c) => PT + (1 - c / yMax) * (H - PT - PB);
   const bars = counts.map((c, i) => {
     const l = x(x0 + i * bw), r = x(x0 + (i + 1) * bw);
-    return `<rect x="${l + 1}" y="${y(c)}" width="${Math.max(1, r - l - 2)}" height="${H - PB - y(c)}" rx="3" fill="#DCE0F8"><title>${c}</title></rect>`;
+    return `<rect class="bar" style="--i:${i}" x="${l + 1}" y="${y(c)}" width="${Math.max(1, r - l - 2)}" height="${H - PB - y(c)}" rx="3" fill="#DCE0F8"><title>${c}</title></rect>`;
   }).join('');
   let pts = [];
   for (let i = 0; i <= 60; i++) {
@@ -360,7 +360,7 @@ function pDistribution(st) {
   return `<div class="chips">${DIMS.map((d, i) => `<button class="chip" data-dim="${i}" aria-pressed="${i === st.dim}">${d.code}</button>`).join('')}</div>
     <div class="grid2">
       <div class="card"><h3 class="h">${DIMS[st.dim].code} · ${t('hist')}</h3>
-        <svg viewBox="0 0 ${W} ${H}" width="100%" height="${H}">${bars}<polyline points="${pts.join(' ')}" fill="none" stroke="#4B57E0" stroke-width="1.8"/>${axis}</svg>
+        <svg data-chart viewBox="0 0 ${W} ${H}" width="100%" height="${H}">${bars}<polyline points="${pts.join(' ')}" fill="none" stroke="#4B57E0" stroke-width="1.8"/>${axis}</svg>
         <div class="legend"><span><i style="background:#DCE0F8"></i>${t('docsLegend')}</span><span><i style="background:#4B57E0"></i>${t('normal')}</span></div></div>
       <div class="card"><h3 class="h">${t('descriptive')}</h3>
         <div class="tile" style="border:0;padding:3px 0"><div class="k">${t('n')}</div><div class="v">${vals.length}</div></div>
@@ -647,6 +647,8 @@ function applyLang(lang) {
     if (v != null) el.innerHTML = v;
   });
   document.querySelectorAll('.lang button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === LANG)));
+  const heroH1 = document.querySelector('.hero h1');
+  if (heroH1) delete heroH1.dataset.split;
 
   if (DATA) {
     // 允许 URL 预置状态，方便分享某一张图 / 自己核对算法
@@ -659,6 +661,175 @@ function applyLang(lang) {
     });
     paintDownload();
   }
+  initMotion();
+}
+
+
+/* ── 动效 ─────────────────────────────────────────────────
+   全部用原生 IntersectionObserver + CSS，不引第三方库。
+   关掉「减少动态效果」的系统设置时，下面这些都会自动失效（内容直接可见）。
+*/
+const motionOn = () => window.matchMedia('(prefers-reduced-motion: no-preference)').matches
+  && 'IntersectionObserver' in window;
+
+let sweeping = false;
+
+/** 把视口内的元素点亮。
+ *
+ * 这里不用 IntersectionObserver：带锚点跳转（/#download）或图片撑高页面时，
+ * IO 的回调在某些情况下不会触发，元素就一直停在 opacity:0 —— 白屏。
+ * 直接量 getBoundingClientRect 最笨也最稳，配合 rAF 节流没有性能问题。
+ */
+function sweep() {
+  sweeping = false;
+  if (!motionOn()) return;
+  const vh = window.innerHeight || 800;
+  const near = (el, k) => {
+    const r = el.getBoundingClientRect();
+    return r.top < vh * k && r.bottom > -80;
+  };
+
+  document.querySelectorAll('[data-reveal]:not(.is-in)').forEach((el) => {
+    if (!near(el, 0.9)) return;
+    el.classList.add('is-in');
+    if (el.classList.contains('band-in')) countUp(el);
+  });
+
+  document.querySelectorAll('svg[data-chart]:not(.chart-in)').forEach((el) => {
+    if (near(el, 0.95)) el.classList.add('chart-in');
+  });
+}
+
+function queueSweep() {
+  if (sweeping) return;
+  sweeping = true;
+  requestAnimationFrame(sweep);
+}
+
+/** 给各区块挂上「滚到才浮现」。分组带不同初始延迟，读起来有节奏。 */
+function markReveals() {
+  if (!motionOn()) return;
+  document.documentElement.classList.add('reveal-ready');
+
+  const groups = [
+    ['.stage', 0, 0],
+    ['.band-in', 0, 0],
+    ['.feat-in .copy', 0, 0],
+    ['.feat-in .frame', 120, 0],
+    ['.fid-in > .kicker', 0, 0],
+    ['.fid-in > h2', 60, 0],
+    ['.fid-in > .fid-lead', 120, 0],
+    ['.fid-grid > div', 80, 110],
+    ['.dl-in > .kicker', 0, 0],
+    ['.dl-in > h2', 60, 0],
+    ['.dl-in > .dl-lead', 100, 0],
+    ['.dl-card', 160, 0],
+    ['.log-list article', 0, 90],
+    ['.cite-in > .kicker', 0, 0],
+    ['.cite-in > h2', 60, 0],
+    ['.cite-in > .fid-lead', 100, 0],
+    ['.cite .code', 140, 0],
+    ['.foot-in > *', 0, 70],
+  ];
+
+  groups.forEach(([sel, base, step]) => {
+    document.querySelectorAll(sel).forEach((el, i) => {
+      if (el.dataset.reveal) return;
+      el.dataset.reveal = 'scale';
+      el.style.setProperty('--d', base + i * step + 'ms');
+    });
+  });
+  queueSweep();
+}
+
+/** 图进视野才开始画：柱子生长、曲线描边 */
+function observeCharts() { queueSweep(); }
+
+/** 首屏标题按词浮现：拆 <br> → 拆词 → 每个词一个 span。 */
+function splitHero() {
+  const h1 = document.querySelector('.hero h1');
+  if (!h1 || !motionOn() || h1.dataset.split) return;
+  const lines = h1.innerHTML.split(/<br\s*\/?>/i);
+  let k = 0;
+  h1.innerHTML = lines
+    .map((line) => line.trim().split(/\s+/).map((w) => `<span class="w" style="--i:${k++}">${w}</span>`).join(' '))
+    .join('<br>');
+  h1.dataset.split = '1';
+}
+
+/** 数字带的滚动计数 */
+function countUp(band) {
+  if (!motionOn()) return;
+  band.querySelectorAll('b').forEach((el) => {
+    const target = Number(el.dataset.to || el.textContent.trim());
+    if (!Number.isFinite(target) || target === 0) return;
+    if (el.dataset.counted) return;
+    el.dataset.counted = '1';
+    const t0 = performance.now();
+    const tick = (t) => {
+      const k = Math.min(1, (t - t0) / 900);
+      el.textContent = String(Math.round(target * (1 - (1 - k) ** 3)));
+      if (k < 1) requestAnimationFrame(tick);
+    };
+    el.textContent = '0';
+    requestAnimationFrame(tick);
+  });
+}
+
+/** 顶栏状态、阅读进度、当前小节高亮、首屏窗口的轻微视差 */
+function bindScroll() {
+  const bar = document.querySelector('.progress');
+  const nav = document.querySelector('.nav');
+  const stage = document.querySelector('.stage .window');
+  const links = [...document.querySelectorAll('.nav nav a[href^="#"]')];
+  const sections = links
+    .map((a) => document.querySelector(a.getAttribute('href')))
+    .filter(Boolean);
+
+  const onScroll = () => {
+    const y = window.scrollY || 0;
+    if (bar) {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (max > 0 ? (y / max) * 100 : 0) + '%';
+    }
+    if (nav) nav.classList.toggle('is-scrolled', y > 6);
+    if (stage && motionOn() && y < 900) {
+      stage.style.transform = `translateY(${-y * 0.035}px) scale(${1 - Math.min(0.012, y * 0.00004)})`;
+    }
+    let active = null;
+    sections.forEach((sec) => {
+      if (sec.getBoundingClientRect().top <= 140) active = sec.id;
+    });
+    links.forEach((a) => a.classList.toggle('is-active', a.getAttribute('href') === '#' + active));
+  };
+
+  window.addEventListener('scroll', () => { onScroll(); queueSweep(); }, { passive: true });
+  window.addEventListener('resize', queueSweep);
+  window.addEventListener('load', queueSweep);
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('a[href^="#"]')) setTimeout(queueSweep, 60);
+  });
+  onScroll();
+  queueSweep();
+}
+
+/** 卡片上跟随指针的柔光 */
+function bindSpotlights() {
+  document.querySelectorAll('.frame').forEach((f) => {
+    f.addEventListener('pointermove', (e) => {
+      const r = f.getBoundingClientRect();
+      f.style.setProperty('--mx', ((e.clientX - r.left) / r.width) * 100 + '%');
+      f.style.setProperty('--my', ((e.clientY - r.top) / r.height) * 100 + '%');
+    });
+  });
+}
+
+/** 语言切换会把文字重写一遍，这些都要重挂 */
+function initMotion() {
+  splitHero();
+  markReveals();
+  observeCharts();
+  bindSpotlights();
 }
 
 /* ── 启动 ── */
@@ -676,6 +847,7 @@ async function boot() {
     } catch (e) { /* 剪贴板不可用就算了 */ }
   });
 
+  bindScroll();
   DLO.os = guessOS();
   DLO.releases = await loadReleases();
   bindDownload();
