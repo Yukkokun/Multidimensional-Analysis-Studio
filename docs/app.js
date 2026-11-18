@@ -684,19 +684,37 @@ function sweep() {
   sweeping = false;
   if (!motionOn()) return;
   const vh = window.innerHeight || 800;
-  const near = (el, k) => {
-    const r = el.getBoundingClientRect();
-    return r.top < vh * k && r.bottom > -80;
-  };
 
-  document.querySelectorAll('[data-reveal]:not(.is-in)').forEach((el) => {
-    if (!near(el, 0.9)) return;
-    el.classList.add('is-in');
-    if (el.classList.contains('band-in')) countUp(el);
+  document.querySelectorAll('[data-reveal]').forEach((el) => {
+    const r = el.getBoundingClientRect();
+    // 已经整块划到视口上方：让它「飘走」（出场动作和入场不同）
+    if (r.bottom < -24) {
+      if (!el.classList.contains('is-out')) {
+        el.classList.remove('is-in');
+        el.classList.add('is-out');
+      }
+      return;
+    }
+    // 还在下方没露头：回到待入场状态
+    if (r.top > vh * 0.92) {
+      el.classList.remove('is-out');
+      if (r.top > vh) el.classList.remove('is-in');
+      return;
+    }
+    // 在视口里：浮现（从上方回来时就是从 -26px 落下，动作和从下方升上来不同）
+    if (!el.classList.contains('is-in')) {
+      el.classList.remove('is-out');
+      el.classList.add('is-in');
+      if (el.classList.contains('band-in')) countUp(el);
+    }
   });
 
-  document.querySelectorAll('svg[data-chart]:not(.chart-in)').forEach((el) => {
-    if (near(el, 0.95)) el.classList.add('chart-in');
+  // 图表离开视口后复位，回来时会重新「画」一遍
+  document.querySelectorAll('svg[data-chart]').forEach((el) => {
+    const r = el.getBoundingClientRect();
+    const visible = r.top < vh * 0.95 && r.bottom > 0;
+    if (visible && !el.classList.contains('chart-in')) el.classList.add('chart-in');
+    else if (!visible && (r.bottom < -40 || r.top > vh + 40)) el.classList.remove('chart-in');
   });
 }
 

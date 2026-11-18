@@ -388,13 +388,25 @@ table.tbl{width:100%;border-collapse:collapse;font-size:11px;table-layout:fixed}
    （脚本挂了也不会白屏）。 */
 
 @media (prefers-reduced-motion: no-preference){
+  /* 入场：从下方浮上来（慢、柔） */
   .reveal-ready [data-reveal]{
-    opacity:0;transform:translateY(22px);
-    transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1);
+    opacity:0;transform:translateY(26px) scale(.985);
+    transition:opacity .85s cubic-bezier(.22,1,.36,1),
+               transform .85s cubic-bezier(.22,1,.36,1),
+               filter .85s cubic-bezier(.22,1,.36,1);
     transition-delay:var(--d,0ms);
   }
-  .reveal-ready [data-reveal="scale"]{transform:translateY(28px) scale(.986)}
-  .reveal-ready [data-reveal].is-in{opacity:1;transform:none}
+  .reveal-ready [data-reveal].is-in{opacity:1;transform:none;filter:none;transition-delay:var(--d,0ms)}
+
+  /* 出场：划过去了就往上飘走 + 轻微散焦，比入场更快、更「利落」——
+     刻意和入场的动作不一样，读起来才不像倒放 */
+  .reveal-ready [data-reveal].is-out{
+    opacity:0;transform:translateY(-26px) scale(.972);filter:blur(1.5px);
+    transition:opacity .48s cubic-bezier(.45,0,.9,.4),
+               transform .48s cubic-bezier(.45,0,.9,.4),
+               filter .48s cubic-bezier(.45,0,.9,.4);
+    transition-delay:calc(var(--o,0ms));
+  }
 
   /* 首屏标题按词浮现 */
   .hero h1 .w{
